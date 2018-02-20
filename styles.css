@@ -215,7 +215,7 @@ nav.sidebar, .main{
 
 /* .....NavBar: Fully showing nav bar..... */
 
-@media (min-width: 1330px) {
+@media (min-width: 450px) {
 
     /*Allow main to be next to Nav*/
     .main{
@@ -249,6 +249,7 @@ section{
     color: rgb(218, 102, 102);
     font-family: 'Orbitron', sans-serif;
     text-align: right;
+    padding-right: 2%;
     text-shadow: 5px 2px black;
 }
 .jumbotron{
