@@ -201,10 +201,8 @@ nav.sidebar, .main{
         width: 100%;
     }
 
-    /* Move nav to full on mouse over*/
-    nav.sidebar:hover{
-        margin-left: 0px;
-    }
+
+
     /*for hiden things when navbar hidden*/
     .forAnimate{
         opacity: 0;
@@ -222,7 +220,7 @@ nav.sidebar, .main{
     }
 
     /*Show all nav*/
-    nav.sidebar{
+    nav.sidebar:hover{
         margin-left: 0px;
         float: left;
     }
