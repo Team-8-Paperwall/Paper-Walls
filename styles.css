@@ -98,6 +98,7 @@ body,html{
 
 /* remove outer padding */
 .main .row{
+    margin-top: 0%;
     padding: 0px;
     margin: 0px;
 }
@@ -169,7 +170,7 @@ nav.sidebar, .main{
         position: static;
         float: none;
         width: auto;
-        margin-top: 0;
+        margin-top: 0%;
         background-color: transparent;
         border: 0;
         -webkit-box-shadow: none;
@@ -241,4 +242,17 @@ nav:hover .forAnimate{
 section{
     padding-left: 15px;
 }
+.jumbotron h1{
+    color: rgb(218, 102, 102);
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+    text-shadow: 5px 2px black;
+}
+.jumbotron{
+    padding-top:0%;
+    padding-bottom:2%;
+ 
+    background-image: url(https://s.tmimgcdn.com/blog/wp-content/uploads/2016/04/1-9-2.jpg?x78840);
+}
+
 
