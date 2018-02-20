@@ -108,6 +108,8 @@ body,html{
 nav.sidebar.navbar {
     border-radius: 0px;
     position: fixed;
+    font-family: 'Orbitron', sans-serif;
+    
 }
 
 nav.sidebar, .main{
