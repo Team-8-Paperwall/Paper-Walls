@@ -256,3 +256,13 @@ section{
 }
 
 
+.pull-right hidden-xs showopacity glyphicon glyphicon-home{
+    font-size:16px;
+}
+.pull-right hidden-xs showopacity glyphicon glyphicon-user{
+    font-size:16px;    
+}
+.pull-right hidden-xs showopacity glyphicon glyphicon-list{
+    font-size:16px;        
+}
+
