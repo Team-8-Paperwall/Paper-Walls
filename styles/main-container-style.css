@@ -1,0 +1,12 @@
+#main-content  {
+    border: 1px solid black;
+}
+
+#main-content button {
+    border: 1px solid black;
+    margin-left: 150px;
+}
+
+#main-content img {
+    width: 500px;
+}
