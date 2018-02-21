@@ -1,12 +1,13 @@
 #main-content  {
     border: 1px solid black;
+    margin-left: 200px;
 }
 
-#main-content button {
+#for-test-delete-later {
     border: 1px solid black;
     margin-left: 150px;
 }
 
-#main-content img {
+.testCatPic {
     width: 500px;
 }
