@@ -252,10 +252,11 @@ section{
     padding-right: 2%;
     text-shadow: 5px 2px black;
 }
+
 .jumbotron{
     padding-top:0%;
     padding-bottom:2%;
- 
+      
     background-image: url(https://www.webdesign.org/img_articles/22292/head_full_770.jpg);
     background-size: 100%;
 }
