@@ -1,0 +1,23 @@
+{
+  "name": "paper-walls",
+  "version": "1.0.0",
+  "description": "Telerik Academy Alpha front end project. App for organizing wallpapers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-8-Paperwall/Paper-Walls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-8-Paperwall/Paper-Walls/issues"
+  },
+  "homepage": "https://github.com/Team-8-Paperwall/Paper-Walls#readme",
+  "dependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-jquery": "^1.0.1"
+  }
+}
