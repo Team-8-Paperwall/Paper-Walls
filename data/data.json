@@ -2,8 +2,8 @@
     "categories": [{
         "name": "animals",
        "wallpapers" : [{
-                "name": "TestCat",
-                "location": "./imgs/animals/TestCat.jpg",
+                "name": "TestCat1",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -16,7 +16,7 @@
             },
             {
                 "name": "TestCat2",
-                "location": "./imgs/animals/TestCat.jpg",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -29,7 +29,7 @@
             },
             {
                 "name": "TestCat3",
-                "location": "./imgs/animals/TestCat.jpg",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -42,7 +42,7 @@
             },
             {
                 "name": "TestCat4",
-                "location": "./imgs/animals/TestCat.jpg",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -55,7 +55,7 @@
             },
             {
                 "name": "TestCat5",
-                "location": "./imgs/animals/TestCat.jpg",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -68,7 +68,7 @@
             },
             {
                 "name": "Dog1",
-                "location": "./imgs/animals/dog.jpg",
+                "location": "./imgs/animals/2.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice dog!"
@@ -85,7 +85,31 @@
         "name" : "cars",
        "wallpapers" : [{
             "name": "Car1",
-            "location": "./imgs/cars/test-car.jpg",
+            "location": "./imgs/cars/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },{
+            "name": "Car2",
+            "location": "./imgs/cars/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },{
+            "name": "Car3",
+            "location": "./imgs/cars/1.jpg",
             "comments": [{
                     "author": "Gosho",
                     "content": "nice!"

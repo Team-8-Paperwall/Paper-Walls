@@ -1,4 +1,4 @@
-/* globals $ console database displayGrid*/
+/* globals $ database */
 
 (function () {
     database.getAll().then((all) => {
