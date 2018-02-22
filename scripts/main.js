@@ -1,7 +1,22 @@
 /* globals $ console database displayGrid*/
 
 (function () {
-    $("#main-content").html(displayGrid());
+    database.getAll().then((all) => {
+        let $gridContainer = $("<div>");
+        $gridContainer.addClass("grid-container");
 
-    var all = database.getAll();
+        for (let i = 0; i < all.length; i++) {
+            let wallpaper = all[i];
+
+            let $img = $("<img>");
+            $img.attr("src", wallpaper.location);
+
+            let $imgContainer = $("<div>");
+            $imgContainer.html($img);
+
+            $gridContainer.append($imgContainer);
+        }
+
+        $("#main-content").html($gridContainer);
+    });
 })();

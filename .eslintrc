@@ -17,6 +17,7 @@
       "space-in-parens": "off",
       "computed-property-spacing":"off",
       "linebreak-style":"off",
-      "space-before-function-paren":"off"
+      "space-before-function-paren":"off",
+      "eol-last":"off"
     }
   }

@@ -1,20 +1,21 @@
 /* globals $ */
 
-var database = (function() {
+var database = (function () {
 
     // Inner logic
-    function getAll () {
-        var wallpapers = [];
+    function getAll() {
 
-        $.getJSON("../data/data.json", function (data) {
-            for (const category of data.categories) {
+        return new Promise((res, rej) => {
+            $.getJSON("../data/data.json", function (data) {
+                const wallpapers = [];
+                for (const category of data.categories) {
                     for (const wallpaper of category.wallpapers) {
                         wallpapers.push(wallpaper);
                     }
-            }
-       });
-
-      return wallpapers;
+                }
+                res(wallpapers);
+            });
+        });
     };
 
     function getAnimals() {
@@ -25,23 +26,16 @@ var database = (function() {
         return _getCategory("cars");
     }
 
-    function _getCategory (name) {
-        var wallpapers = [];
-
-        $.getJSON("../data/data.json", function (data) {
-            for (const category of data.categories) {
+    function _getCategory(name) {
+        return new Promise((res, rej) => {
+            $.getJSON("../data/data.json", function (data) {
+                for (const category of data.categories) {
                     if (category.name === name) {
-                        for (const wallpaper of category.wallpapers) {
-                            wallpapers.push(wallpaper);
-                        }
-
-                        break;
+                        res(category.wallpapers);
                     }
-            }
-
+                }
+            });
         });
-
-        return wallpapers;
     }
 
     // Expose API
