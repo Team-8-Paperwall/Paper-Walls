@@ -1,11 +1,13 @@
-$('#for-test-delete-later').on("click", function () {
+/* globals $ */
+
+$("#for-test-delete-later").on("click", function () {
     $.getJSON("../data/data.json", function (data) {
         for (let i = 0; i < data.categories[0].animals.length; i++) {
             let loc = data.categories[0].animals[i].location;
-            let $img = $('<img>');
+            let $img = $("<img>");
             $img.addClass("testCatPic");
-            $img.attr('src', loc);
-            $img.appendTo('#main-content');
+            $img.attr("src", loc);
+            $img.appendTo("#main-content");
 
             let $div = $("<div>");
             $div.addClass("media");
@@ -15,18 +17,19 @@ $('#for-test-delete-later').on("click", function () {
                 const author = comment.author;
                 const content = comment.content;
 
-                let $divMC = $('<div>');
+                let $divMC = $("<div>");
+
                 //$divMC.addClass("media-body");
 
-                let $img = $('<img>');
+                let $img = $("<img>");
                 $img.addClass("img-thumbnail");
-                $img.attr('src', "../imgs/logoPW.png");
+                $img.attr("src", "../imgs/logoPW.png");
 
                 let $h5 = $("<h5>");
                 $h5.addClass("author");
                 $h5.text(author);
 
-                let $p = $('<p>');
+                let $p = $("<p>");
                 $p.text(content);
 
                 $divMC.append($h5);
@@ -35,9 +38,7 @@ $('#for-test-delete-later').on("click", function () {
 
                 $div.append($divMC);
             }
-            $div.appendTo('#main-content');
+            $div.appendTo("#main-content");
         }
-
     });
-
-})
+});
