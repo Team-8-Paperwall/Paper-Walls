@@ -1,4 +1,4 @@
-/* globals $ database */
+/* globals $ database configuration*/
 
 (function () {
     database.getAll().then((all) => {
@@ -17,6 +17,6 @@
             $gridContainer.append($imgContainer);
         }
 
-        $("#main-content").html($gridContainer);
+        $(configuration.main).html($gridContainer);
     });
 })();
