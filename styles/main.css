@@ -130,27 +130,6 @@ nav.sidebar {
         margin-left: 200px;
     }
 
-    /*Center Brand*/
-    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-        margin-left: 0px;
-    }
-    /*Center Brand*/
-    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-        text-align: center;
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    /*Center Icons*/
-    nav.sidebar a{
-        padding-right: 13px;
-    }
-
-    /*adds border top to first nav box */
-    nav.sidebar .navbar-nav > li:first-child{
-        border-top: 1px #e5e5e5 solid;
-    }
-
     /*adds border to bottom nav boxes*/
     nav.sidebar .navbar-nav > li{
         border-bottom: 1px #e5e5e5 solid;
@@ -193,8 +172,6 @@ nav.sidebar {
         width: 100%;
     }
 
-
-
     /*for hiden things when navbar hidden*/
     .forAnimate{
         opacity: 0;
@@ -224,9 +201,7 @@ nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav
 nav:hover .forAnimate{
     opacity: 1;
 }
-section{
-    padding-left: 15px;
-}
+
 .jumbotron h1{
     color: rgb(218, 102, 102);
     font-family: 'Orbitron', sans-serif;
@@ -237,8 +212,7 @@ section{
 
 .jumbotron{
     padding-top:0%;
-    padding-bottom:2%;
-      
+    padding-bottom:2%;      
     background-image: url(https://www.webdesign.org/img_articles/22292/head_full_770.jpg);
     background-size: 100%;
 }
