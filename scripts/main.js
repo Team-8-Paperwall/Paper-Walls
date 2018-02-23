@@ -1,22 +1,7 @@
-/* globals $ database configuration*/
+/* globals $ database htmlLoader*/
 
 (function () {
     database.getAll().then((all) => {
-        let $gridContainer = $("<div>");
-        $gridContainer.addClass("grid-container");
-
-        for (let i = 0; i < all.length; i++) {
-            let wallpaper = all[i];
-
-            let $img = $("<img>");
-            $img.attr("src", wallpaper.location);
-
-            let $imgContainer = $("<div>");
-            $imgContainer.html($img);
-
-            $gridContainer.append($imgContainer);
-        }
-
-        $(configuration.main).html($gridContainer);
+        htmlLoader.loadGrid(all);
     });
 })();
