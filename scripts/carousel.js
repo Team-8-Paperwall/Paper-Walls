@@ -1,10 +1,9 @@
-/* globals $ database console*/
+/* globals $ database */
 
 (function () {
     $(".dropdown-menu").on("click", ".list-item", function () {
-        var category = $(this).attr("data-name");
-        database._getCategory(category).then((cat) => {
-            console.log(cat);
+        var categoryName = $(this).attr("data-name");
+        database.getCategory(categoryName).then((category) => {
             var generateCarouselItem = function (imageSrc) {
                 return $("<div>")
                     .addClass("item")
@@ -38,8 +37,8 @@
               </div>
             `);
 
-            for (let i = 0; i < cat.length; i++) {
-                let el = cat[i];
+            for (let i = 0; i < category.length; i++) {
+                let el = category[i];
                 let div = generateCarouselItem(el.location);
                 $(".carousel-inner").append(div);
             }

@@ -1,4 +1,4 @@
-/* globals $ configuration*/
+/* globals $ */
 
 const htmlLoader = (function () {
     const loadGrid = function (wallpapers) {
