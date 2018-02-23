@@ -1,4 +1,4 @@
-/* globals $ */
+/* globals $ Promise*/
 
 var database = (function () {
 
@@ -19,14 +19,14 @@ var database = (function () {
     };
 
     function getAnimals() {
-        return _getCategory("animals");
+        return getCategory("animals");
     };
 
     function getCars() {
-        return _getCategory("cars");
+        return getCategory("cars");
     }
 
-    function _getCategory(name) {
+    function getCategory(name) {
         return new Promise((res, rej) => {
             $.getJSON("../data/data.json", function (data) {
                 for (const category of data.categories) {
@@ -43,6 +43,6 @@ var database = (function () {
         getAll,
         getAnimals,
         getCars,
-        _getCategory
+        getCategory
     };
 })();
