@@ -53,7 +53,7 @@ const htmlLoader = (function () {
       </div>
     </div>`;
     });
-
+    
     return {
         loadGrid,
         loadAboutUs
