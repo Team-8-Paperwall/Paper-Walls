@@ -42,6 +42,7 @@ var database = (function () {
     return {
         getAll,
         getAnimals,
-        getCars
+        getCars,
+        _getCategory
     };
 })();
