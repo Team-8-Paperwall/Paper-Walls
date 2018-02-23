@@ -213,7 +213,7 @@ nav:hover .forAnimate{
 .jumbotron{
     padding-top:0%;
     padding-bottom:2%;      
-    background-image: url(https://www.webdesign.org/img_articles/22292/head_full_770.jpg);
+    background-image: url(https://www.phyramid.com/images/blog/making-phyramid-coms-procedurally-rendered-3d-header/header-background-indexed.png);
     background-size: 100%;
 }
 
@@ -227,4 +227,6 @@ nav:hover .forAnimate{
 .pull-right hidden-xs showopacity glyphicon glyphicon-list{
     font-size:16px;        
 }
+
+
 
