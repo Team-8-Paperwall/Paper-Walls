@@ -10,7 +10,6 @@
   height: 850px;
 }
 
-
 .carousel-caption {
 background-color: rgba(0,0,0,.8);
 position: absolute;
@@ -42,6 +41,4 @@ background-image: none;
   border-width:10px;  
   border-style:ridge;
   border-color:gray;
- 
-
 }

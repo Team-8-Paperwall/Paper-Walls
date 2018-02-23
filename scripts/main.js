@@ -1,22 +1,17 @@
-/* globals $ database configuration*/
+/* globals $ database htmlLoader configuration*/
 
 (function () {
     database.getAll().then((all) => {
-        let $gridContainer = $("<div>");
-        $gridContainer.addClass("grid-container");
-
-        for (let i = 0; i < all.length; i++) {
-            let wallpaper = all[i];
-
-            let $img = $("<img>");
-            $img.attr("src", wallpaper.location);
-
-            let $imgContainer = $("<div>");
-            $imgContainer.html($img);
-
-            $gridContainer.append($imgContainer);
-        }
-
-        $(configuration.main).html($gridContainer);
+        $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
+        $(configuration.main).show("drop", {}, 1000);
     });
+
+<<<<<<< HEAD
+    $("#our-team").on("click", function(){
+       $(configuration.main).html(htmlLoader.loadAboutUs());
+    })
 })();
+
+=======
+})();
+>>>>>>> 265f8242d060a0cc07a790c2cabb871a7f77446e
