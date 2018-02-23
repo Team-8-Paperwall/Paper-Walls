@@ -1,8 +1,9 @@
 {
     "categories": [{
-        "animals": [{
-                "name": "TestCat",
-                "location": "./imgs/animals/TestCat.jpg",
+        "name": "animals",
+       "wallpapers" : [{
+                "name": "TestCat1",
+                "location": "./imgs/animals/1.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice!"
@@ -14,8 +15,60 @@
                 ]
             },
             {
-                "name": "Dog",
-                "location": "./imgs/animals/dog.jpg",
+                "name": "TestCat2",
+                "location": "./imgs/animals/1.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "TestCat3",
+                "location": "./imgs/animals/1.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "TestCat4",
+                "location": "./imgs/animals/1.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "TestCat5",
+                "location": "./imgs/animals/1.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "Dog1",
+                "location": "./imgs/animals/2.jpg",
                 "comments": [{
                         "author": "Gosho",
                         "content": "nice dog!"
@@ -26,10 +79,13 @@
                     }
                 ]
             }
-        ],
-        "cars": {
-            "name": "dunno",
-            "location": "./imgs/cars/dunno.jpg",
+        ]
+    }, 
+    {
+        "name" : "cars",
+       "wallpapers" : [{
+            "name": "Car1",
+            "location": "./imgs/cars/1.jpg",
             "comments": [{
                     "author": "Gosho",
                     "content": "nice!"
@@ -39,6 +95,30 @@
                     "content": "not nice!"
                 }
             ]
-        }
+        },{
+            "name": "Car2",
+            "location": "./imgs/cars/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },{
+            "name": "Car3",
+            "location": "./imgs/cars/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        }]
     }]
 }

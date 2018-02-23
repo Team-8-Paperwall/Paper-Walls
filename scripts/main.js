@@ -1,43 +1,22 @@
-$('#for-test-delete-later').on("click", function () {
-    $.getJSON("../data/data.json", function (data) {
-        for (let i = 0; i < data.categories[0].animals.length; i++) {
-            let loc = data.categories[0].animals[i].location;
-            let $img = $('<img>');
-            $img.addClass("testCatPic");
-            $img.attr('src', loc);
-            $img.appendTo('#main-content');
+/* globals $ database configuration*/
 
-            let $div = $("<div>");
-            $div.addClass("media");
+(function () {
+    database.getAll().then((all) => {
+        let $gridContainer = $("<div>");
+        $gridContainer.addClass("grid-container");
 
-            for (let j = 0; j < data.categories[0].animals[i].comments.length; j++) {
-                const comment = data.categories[0].animals[i].comments[j];
-                const author = comment.author;
-                const content = comment.content;
+        for (let i = 0; i < all.length; i++) {
+            let wallpaper = all[i];
 
-                let $divMC = $('<div>');
-                //$divMC.addClass("media-body");
+            let $img = $("<img>");
+            $img.attr("src", wallpaper.location);
 
-                let $img = $('<img>');
-                $img.addClass("img-thumbnail");
-                $img.attr('src', "../imgs/logoPW.png");
+            let $imgContainer = $("<div>");
+            $imgContainer.html($img);
 
-                let $h5 = $("<h5>");
-                $h5.addClass("author");
-                $h5.text(author);
-
-                let $p = $('<p>');
-                $p.text(content);
-
-                $divMC.append($h5);
-                $divMC.append($img);
-                $divMC.append($p);
-
-                $div.append($divMC);
-            }
-            $div.appendTo('#main-content');
+            $gridContainer.append($imgContainer);
         }
 
+        $(configuration.main).html($gridContainer);
     });
-
-})
+})();
