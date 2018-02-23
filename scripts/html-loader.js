@@ -10,14 +10,16 @@ const htmlLoader = (function () {
 
             let $img = $("<img>");
             $img.attr("src", wallpaper.location);
+            $img.addClass("grid-wallpaper");
 
             let $imgContainer = $("<div>");
             $imgContainer.html($img);
+            $imgContainer.addClass("grid-wallpaper-container");
 
             $gridContainer.append($imgContainer);
         }
 
-        $(configuration.main).html($gridContainer);
+        return $gridContainer;
     };
 
     return {

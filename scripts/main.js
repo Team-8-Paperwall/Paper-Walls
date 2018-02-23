@@ -1,7 +1,9 @@
-/* globals $ database htmlLoader*/
+/* globals $ database htmlLoader configuration*/
 
 (function () {
     database.getAll().then((all) => {
-        htmlLoader.loadGrid(all);
+        $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
+        $(configuration.main).show("drop", {}, 1000);
     });
+
 })();
