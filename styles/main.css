@@ -1,7 +1,7 @@
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
+del, dfn, em, ins, kbd, q, samp,
 small, strong, sub, sup, var,
 b, i,
 dl, dt, dd, ol, ul, li,
@@ -228,5 +228,32 @@ nav:hover .forAnimate{
     font-size:16px;        
 }
 
+.rounded {
+    border-radius: 100%;
+}
 
+.team-member {
+    margin-left: 5%;
+    margin-top:2%;
+}
 
+.member-name{
+    font-weight: bold;
+    font-family: 'Pompiere', cursive;
+    margin-top:5%;
+}
+.company-position{
+    font-family: 'Pompiere', cursive;
+}
+.about-us{
+    margin-left:10%;
+    margin-bottom:2%;
+    font-family: 'Pompiere', cursive;
+    font-size: 25px;
+}
+.description{
+    margin-bottom: 0;
+}
+.member-description{
+    font-family: 'Pompiere', cursive;    
+}
