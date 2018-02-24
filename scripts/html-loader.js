@@ -27,7 +27,7 @@ const htmlLoader = (function () {
     };
 
     const loadCarousel = function () {
-        
+       return "../views/carousel-layout.html";
     };
 
     return {

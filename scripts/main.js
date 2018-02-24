@@ -16,6 +16,4 @@
             $(configuration.main).show("drop", {}, 1000);
         });
     });
-
-    
 })();
