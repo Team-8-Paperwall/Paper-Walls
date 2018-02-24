@@ -1,6 +1,6 @@
 /* globals $ Promise*/
 
-var database = (function () {
+const database = (function () {
 
     // Inner logic
     function getAll() {
