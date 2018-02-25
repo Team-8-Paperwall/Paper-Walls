@@ -26,17 +26,6 @@ color: #fff;
 text-align: center;
 }
 
-.carousel-indicators {
-position: absolute;
-bottom: 0;
-right: 0;
-left: 0;
-width: 100%;
-z-index: 15;
-margin: 0;
-text-align: center;
-}
-
 .carousel-control.left,
 .carousel-control.right {
 background-image: none;
