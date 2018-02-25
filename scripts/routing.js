@@ -1,17 +1,18 @@
-/* globals $ window console location*/
+/* globals $ database configuration htmlLoader getCarousel alert*/
 
-$(function () {
-
-//    $(window).on("hashchange", function () {
-//        let path = location.hash;
-
-//        if (path === "#home") {
-//            console.log("in home");
-//        } else if (path === "#about-us") {
-//            console.log("in about us");
-//        } else {
-//            //location.hash = "home";
-//        }
-//    });
-
-});
+const router = function (path) {
+    if (path === "#home") {
+        database.getAll().then((all) => {
+            $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
+            $(configuration.main).show("drop", {}, 1000);
+        });
+    } else if (path === "#our-team") {
+        $(configuration.main).html(htmlLoader.loadAboutUs());
+    } else if (path === "#categories/animals") { // TODO: add other categories
+        database.getAnimals().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+    } else {
+        alert("TODO: Redirect to 404 page!");
+    }
+};

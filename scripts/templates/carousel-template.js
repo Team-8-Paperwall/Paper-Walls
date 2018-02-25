@@ -1,5 +1,7 @@
-const carouselTemplate = function () {
-    return `<div id="myCarousel" class="carousel slide" data-ride="carousel">
+/* globals $ configuration*/
+
+const carouselTemplate = function (category) {
+    const html = `<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
     </div>
     <!-- Left and right controls -->
@@ -15,4 +17,37 @@ const carouselTemplate = function () {
     <a id="link" href="" download="paperWallsWallpaper"></a>
 </div>
       `;
+
+    var generateCarouselItem = function (imageSrc) {
+        return $("<div>")
+            .addClass("item")
+            .append(
+                $("<img>").attr("src", imageSrc)
+            );
+    };
+
+    $(configuration.main).html(html);
+
+    for (let i = 0; i < category.length; i++) {
+        let el = category[i];
+        let div = generateCarouselItem(el.location);
+
+        $(".carousel-inner").append(div);
+    }
+
+    $("#dln").on("click", function () {
+        var source = $(".active img").attr("src");
+
+        $("#link").attr("href", source);
+        $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
+
+        $("#link").get(0).click();
+    });
+
+    $(".item").eq(0).addClass("active");
+
+
+    $(".carousel").carousel({
+        interval: 2000
+    });
 };

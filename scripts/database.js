@@ -18,6 +18,12 @@ const database = (function () {
         });
     };
 
+    function getAnimals() {
+        return getCategory("animals");
+    }
+
+    // TODO: add functions to get all other categories
+
     function getCategory(name) {
         return new Promise((res, rej) => {
             $.getJSON("../data/data.json", function (data) {
@@ -33,6 +39,7 @@ const database = (function () {
     // Expose API
     return {
         getAll,
+        getAnimals,
         getCategory
     };
 })();
