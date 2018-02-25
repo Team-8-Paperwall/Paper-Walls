@@ -1,4 +1,4 @@
-/* globals $ */
+/* globals $ aboutUsTemplate carouselTemplate*/
 
 const htmlLoader = (function () {
     const loadGrid = function (wallpapers) {
@@ -23,11 +23,11 @@ const htmlLoader = (function () {
     };
 
     const loadAboutUs = function () {
-        return "../views/about-us-layout.html";
+        return aboutUsTemplate();
     };
 
     const loadCarousel = function () {
-       return "../views/carousel-layout.html";
+       return carouselTemplate();
     };
 
     return {

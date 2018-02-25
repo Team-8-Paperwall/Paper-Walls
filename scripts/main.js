@@ -7,7 +7,7 @@
     });
 
     $("#our-team").on("click", function () {
-        $(configuration.main).load(htmlLoader.loadAboutUs());
+        $(configuration.main).html(htmlLoader.loadAboutUs());
     });
 
     $("#home").on("click", function () {
