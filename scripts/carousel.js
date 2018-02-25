@@ -3,7 +3,6 @@
 (function () {
     $(".dropdown-menu").on("click", ".list-item", function () {
         var categoryName = $(this).attr("data-name");
-        console.log(categoryName);
         database.getCategory(categoryName).then((category) => {
             var generateCarouselItem = function (imageSrc) {
                 return $("<div>")
