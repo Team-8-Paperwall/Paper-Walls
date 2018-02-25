@@ -83,7 +83,7 @@
     }, 
     {
         "name" : "cars",
-       "wallpapers" : [{
+        "wallpapers" : [{
             "name": "1",
             "location": "./imgs/cars/1.jpg",
             "comments": [{
@@ -95,7 +95,8 @@
                     "content": "not nice!"
                 }
             ]
-        },{
+        },
+        {
             "name": "2",
             "location": "./imgs/cars/2.jpg",
             "comments": [{
@@ -160,5 +161,526 @@
                 }
             ]
         }]
+        },
+        {
+        "name" : "celebs",
+       "wallpapers" : [{
+        
+            "name": "1",
+            "location": "./imgs/celebrities/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "2",
+            "location": "./imgs/celebrities/2.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        
+},
+{        
+        "name": "3",
+        "location": "./imgs/celebrities/3.jpg",
+        "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {       
+            "name": "4",
+            "location": "./imgs/celebrities/7.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {     
+            "name": "5",
+            "location": "./imgs/celebrities/5.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "6",
+            "location": "./imgs/celebrities/6.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {      
+            "name": "7",
+            "location": "./imgs/celebrities/7.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+        ]           
     }]
+    },
+    {
+        "name" : "cartoons",
+        "wallpapers" : [{
+            "name": "1",
+            "location": "./imgs/cartoons/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "2",
+            "location": "./imgs/cartoons/2.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "3",
+            "location": "./imgs/cartoons/3.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "4",
+            "location": "./imgs/cartoons/4.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "5",
+            "location": "./imgs/cartoons/5.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "6",
+            "location": "./imgs/cartoons/6.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        }]
+        },
+        {
+        "name" : "computers",
+        "wallpapers" : [{
+            "name": "1",
+            "location": "./imgs/computers/1.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "2",
+            "location": "./imgs/computers/2.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "3",
+            "location": "./imgs/computers/3.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "4",
+            "location": "./imgs/computers/4.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "5",
+            "location": "./imgs/computers/5.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "6",
+            "location": "./imgs/computers/6.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        }]
+        },
+        {
+            "name" : "futuristic",
+            "wallpapers" : [{
+                "name": "1",
+                "location": "./imgs/futuristic/1.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "2",
+                "location": "./imgs/futuristic/2.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "3",
+                "location": "./imgs/futuristic/3.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "3",
+                "location": "./imgs/futuristic/3.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "4",
+                "location": "./imgs/futuristic/4.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+            {
+                "name": "5",
+                "location": "./imgs/futuristic/5.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            },
+              {
+                "name": "6",
+                "location": "./imgs/futuristic/6.jpg",
+                "comments": [{
+                        "author": "Gosho",
+                        "content": "nice!"
+                    },
+                    {
+                        "author": "pesHo",
+                        "content": "not nice!"
+                    }
+                ]
+            
+                }]
+            },
+            {
+                "name" : "sports",
+                "wallpapers" : [{
+                    
+                    "name": "2",
+                    "location": "./imgs/sports/2.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "3",
+                    "location": "./imgs/sports/3.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "4",
+                    "location": "./imgs/sports/4.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "5",
+                    "location": "./imgs/sports/5.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+               
+                  {
+                    "name": "6",
+                    "location": "./imgs/sports/6.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                
+                    }]
+                    
+            },
+            {
+                "name" : "landscapes",
+                "wallpapers" : [{
+                    "name": "1",
+                    "location": "./imgs/landscapes/1.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "2",
+                    "location": "./imgs/landscapes/2.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "3",
+                    "location": "./imgs/landscapes/3.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "3",
+                    "location": "./imgs/landscapes/3.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "4",
+                    "location": "./imgs/landscapes/4.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                {
+                    "name": "5",
+                    "location": "./imgs/landscapes/5.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                },
+                  {
+                    "name": "6",
+                    "location": "./imgs/landscapes/6.jpg",
+                    "comments": [{
+                            "author": "Gosho",
+                            "content": "nice!"
+                        },
+                        {
+                            "author": "pesHo",
+                            "content": "not nice!"
+                        }
+                    ]
+                
+                    }]
+                }
+        ]
 }
