@@ -84,7 +84,7 @@
     {
         "name" : "cars",
        "wallpapers" : [{
-            "name": "Car1",
+            "name": "1",
             "location": "./imgs/cars/1.jpg",
             "comments": [{
                     "author": "Gosho",
@@ -96,8 +96,8 @@
                 }
             ]
         },{
-            "name": "Car2",
-            "location": "./imgs/cars/1.jpg",
+            "name": "2",
+            "location": "./imgs/cars/2.jpg",
             "comments": [{
                     "author": "Gosho",
                     "content": "nice!"
@@ -107,9 +107,49 @@
                     "content": "not nice!"
                 }
             ]
-        },{
-            "name": "Car3",
-            "location": "./imgs/cars/1.jpg",
+        },
+        {
+            "name": "3",
+            "location": "./imgs/cars/3.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "4",
+            "location": "./imgs/cars/4.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "5",
+            "location": "./imgs/cars/5.jpg",
+            "comments": [{
+                    "author": "Gosho",
+                    "content": "nice!"
+                },
+                {
+                    "author": "pesHo",
+                    "content": "not nice!"
+                }
+            ]
+        },
+        {
+            "name": "6",
+            "location": "./imgs/cars/6.jpg",
             "comments": [{
                     "author": "Gosho",
                     "content": "nice!"
