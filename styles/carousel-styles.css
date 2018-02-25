@@ -49,3 +49,10 @@ background-image: none;
   border-color:gray;
   margin-left: 300px;
 }
+#dln{
+    margin-left:15%;
+    width: 2000px;
+    height:150px;
+    font-size: 90px;
+
+}
