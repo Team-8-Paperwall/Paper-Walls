@@ -12,7 +12,6 @@ const router = function (path) {
         database.getAnimals().then((category) => {
             $(configuration.main).html(htmlLoader.loadCarousel(category));
         });
-
     }
     else if (path === "#categories/cars") {
 
@@ -61,8 +60,7 @@ const router = function (path) {
         database.getSports().then((category) => {
             $(configuration.main).html(htmlLoader.loadCarousel(category));
         });
-
     } else {
-       alert("TODO: Redirect to 404 page!");
+        $("body").html(htmlLoader.loadPageNotFound());
     }
 };

@@ -5,7 +5,7 @@
 
     $(window).on("hashchange", function () {
         path = location.hash;
-
+    console.log(path);
        router(path);
     });
 

@@ -13,9 +13,14 @@ const htmlLoader = (function () {
        return carouselTemplate(category);
     };
 
+    const loadPageNotFound= function(){
+        return pageNotFoundTemplate();
+    };
+
     return {
         loadGrid,
         loadAboutUs,
-        loadCarousel
+        loadCarousel,
+        loadPageNotFound
     };
 })();
