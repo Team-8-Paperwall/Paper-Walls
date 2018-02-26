@@ -1,19 +1,17 @@
-/* globals $ database htmlLoader configuration*/
+/* globals $ window location router*/
 
 (function () {
-    database.getAll().then((all) => {
-        $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
-        $(configuration.main).show("drop", {}, 1000);
+    let path = location.hash;
+
+    $(window).on("hashchange", function () {
+        path = location.hash;
+
+       router(path);
     });
 
-    $("#our-team").on("click", function () {
-        $(configuration.main).load(htmlLoader.loadAboutUs());
-    });
-
-    $("#home").on("click", function () {
-        database.getAll().then((all) => {
-            $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
-            $(configuration.main).show("drop", {}, 1000);
-        });
-    });
+    if (path === "" || path === "#") {
+        path = "#home";
+    } else {
+        router(path);
+    }
 })();

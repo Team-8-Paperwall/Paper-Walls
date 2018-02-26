@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./styles/external-libraries-css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="./styles/carousel-styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/main-container.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/grid-display.css">
 
@@ -32,12 +31,12 @@
                 <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a id="home" href="#">Home
+                            <a id="home" href="#home">Home
                                 <span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span>
                             </a>
                         </li>
                         <li>
-                            <a id="our-team" href="#">Our Team
+                            <a id="our-team" href="#our-team">Our Team
                                 <span class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
                             </a>
                         </li>
@@ -48,29 +47,29 @@
                             </a>
                             <ul class="dropdown-menu forAnimate" role="menu">
                                 <li class="list-item" data-name="animals">
-                                    <a href="#">Animals</a>
+                                    <a href="#categories/animals">Animals</a>
                                 </li>
                                 <li class="list-item" data-name="cars">
-                                    <a href="#">Cars</a>
+                                    <a href="#categories/cars">Cars</a>
                                 </li>
                                 <li class="list-item" data-name="cartoons">
-                                    <a href="#">Cartoons</a>
+                                    <a href="#categories/cartoons">Cartoons</a>
                                 </li>
                                 <li class="list-item" data-name="computers">
-                                    <a href="#">Computers</a>
+                                    <a href="#categories/computers">Computers</a>
                                 </li>
                                 <li class="list-item" data-name="celebs">
-                                    <a href="#">Celebrities</a>
+                                    <a href="#categories/celebrities">Celebrities</a>
                                 </li>
 
                                 <li class="list-item" data-name="futuristic">
-                                    <a href="#">Futuristic</a>
+                                    <a href="#categories/futuristic">Futuristic</a>
                                 </li>
                                 <li class="list-item" data-name = "landscapes">
-                                    <a href="#">Landscapes</a>
+                                    <a href="#categories/landscapes">Landscapes</a>
                                 </li>
                                 <li class="list-item" data-name="sports">
-                                    <a href="#">Sports</a>
+                                    <a href="#categories/sports">Sports</a>
                                 </li>
                             </ul>
                         </li>
@@ -92,11 +91,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
     <script src="./scripts/external-libraries/jquery-ui.min.js"></script>
     <!-- Our scripts below -->
-    <script src="./data/data.json"></script>
+    <!-- Templates -->
+    <script src="./scripts/templates/grid-display-template.js"></script>
+    <script src="./scripts/templates/about-us-template.js"></script>
+    <script src="./scripts/templates/carousel-template.js"></script>
+    <!--Data and database -->
+    <script type="application/json" src="./data/data.json"></script>
     <script src="./scripts/database.js"></script>
+    <!-- Business logic -->
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/config.js"></script>
     <script src="./scripts/html-loader.js"></script>
+    <script src="./scripts/routing.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 

@@ -20,12 +20,9 @@ const database = (function () {
 
     function getAnimals() {
         return getCategory("animals");
-    };
-
-    function getCars() {
-        return getCategory("cars");
     }
 
+    // TODO: add functions to get all other categories
 
     function getCategory(name) {
         return new Promise((res, rej) => {
@@ -43,7 +40,6 @@ const database = (function () {
     return {
         getAll,
         getAnimals,
-        getCars,
-        getCategory,
+        getCategory
     };
 })();
