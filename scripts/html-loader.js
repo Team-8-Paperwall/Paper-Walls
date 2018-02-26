@@ -1,7 +1,8 @@
-/* globals $ */
+/* globals gridTemplate aboutUsTemplate carouselTemplate*/
 
 const htmlLoader = (function () {
     const loadGrid = function (wallpapers) {
+<<<<<<< HEAD
         let $gridContainer = $("<div>");
         $gridContainer.addClass("grid-container");
 
@@ -19,14 +20,17 @@ const htmlLoader = (function () {
         }
 
         return $gridContainer;
+=======
+        return gridTemplate(wallpapers);
+>>>>>>> f7247f35f3259e104742868b34e3e5c3069db368
     };
 
     const loadAboutUs = function () {
-        return "../views/about-us-layout.html";
+        return aboutUsTemplate();
     };
 
-    const loadCarousel = function () {
-       return "../views/carousel-layout.html";
+    const loadCarousel = function (category) {
+       return carouselTemplate(category);
     };
 
     return {
