@@ -1,6 +1,6 @@
 /* globals $ window location router*/
 
-(function () {
+$(function () {
     let path = location.hash;
 
     $(window).on("hashchange", function () {
@@ -10,8 +10,9 @@
     });
 
     if (path === "" || path === "#") {
+        location.hash = "#home";
         path = "#home";
     } else {
         router(path);
     }
-})();
+});

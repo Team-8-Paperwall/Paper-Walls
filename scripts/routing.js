@@ -1,4 +1,4 @@
-/* globals $ database configuration htmlLoader getCarousel alert*/
+/* globals $ database configuration htmlLoader alert*/
 
 const router = function (path) {
     if (path === "#home") {
