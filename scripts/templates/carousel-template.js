@@ -16,6 +16,7 @@ const carouselTemplate = function (category) {
     </a>
     <button id="dln" class="btn btn-primary">Download!</button>
     <a id="link" href="" download="paperWallsWallpaper"></a>
+    </a>
 </div>
       `;
 
@@ -29,25 +30,19 @@ const carouselTemplate = function (category) {
 
     $(configuration.main).html(html);
 
-    for (let i = 0; i < category.length; i++) {
-        let el = category[i];
+    category.forEach(function(el){
         let div = generateCarouselItem(el.location);
-
-        $(".carousel-inner").append(div);
-    }
+        $(".carousel-inner").append(div);       
+    });
 
     $("#dln").on("click", function () {
         var source = $(".active img").attr("src");
-
         $("#link").attr("href", source);
         $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
-
         $("#link").get(0).click();
     });
 
     $(".item").eq(0).addClass("active");
-
-
     $(".carousel").carousel({
         interval: 2000
     });
