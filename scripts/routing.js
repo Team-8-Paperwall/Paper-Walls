@@ -12,6 +12,56 @@ const router = function (path) {
         database.getAnimals().then((category) => {
             $(configuration.main).html(htmlLoader.loadCarousel(category));
         });
+
+    }
+    else if (path === "#categories/cars") {
+
+        database.getCars().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+    }
+    else if (path === "#categories/cartoons") {
+
+        database.getCartoons().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+    }
+    else if (path === "#categories/computers") {
+
+        database.getComputers().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+
+    }
+    else if (path === "#categories/celebrities") {
+
+        database.getCelebs().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+    }
+    else if (path === "#categories/landscapes") {
+
+        database.getLandscapes().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+    }
+    else if (path === "#categories/futuristic") {
+
+        database.getFuturistics().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
+    }
+    else if (path === "#categories/sports") {
+        database.getSports().then((category) => {
+            $(configuration.main).html(htmlLoader.loadCarousel(category));
+        });
+
     } else {
        alert("TODO: Redirect to 404 page!");
     }
