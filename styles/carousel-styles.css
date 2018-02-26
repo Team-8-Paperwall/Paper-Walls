@@ -1,12 +1,12 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    position: absolute;
     display: block;
+    /*object-fit:cover;*/
+    /*position:inherit;*/
+
 }
 .item, .carousel {
-    position: inherit;
-    width: 1999px;
-    height: 1000px; 
+    position: relative;
 }
 
 .carousel-caption {
@@ -25,11 +25,11 @@ text-align: center;
   border-width:55px;  
   border-style:ridge;
   border-color:gray;
-  margin-left: 10%;
+  margin-left: 3%;
 }
 #dln{
-    margin-left:15%;
-    width: 2000px;
-    height:150px;
-    font-size: 90px;
+    margin-left:3%;
+    font-size: 80%;
+    width:100%;
+    
 }
