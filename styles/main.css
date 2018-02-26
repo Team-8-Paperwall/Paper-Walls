@@ -262,6 +262,6 @@ body{
     background: url("http://creativity.buffalostate.edu/sites/creativity.buffalostate.edu/files/image/Background%20Post-it-notes.jpg");
     height: 100%; 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
