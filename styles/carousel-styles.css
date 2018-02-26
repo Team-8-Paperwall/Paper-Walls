@@ -3,13 +3,14 @@
     display: block;
     width:1079px;
     height:674px;
-  
+  object-fit: cover;
+  position: relative;
     /*object-fit:cover;*/
     /*position:inherit;*/
 
 }
 .item, .carousel {
-    position: relative;
+    position: absolute;
 }
 
 .carousel-caption {
@@ -34,5 +35,13 @@ text-align: center;
     margin-left:3%;
     font-size: 80%;
     width:100%;    
+}
+
+ a.left.carousel-control{
+     margin-left: 5%;
+ }
+ a.right.carousel-control{
+    margin-left: 4%;
+    margin-bottom: 0%;
 }
 
