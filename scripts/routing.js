@@ -61,6 +61,15 @@ const router = function (path) {
             $(configuration.main).html(htmlLoader.loadCarousel(category));
         });
     } else {
+     
         $("body").html(htmlLoader.loadPageNotFound());
+        $(window).on("hashchange", function(){
+            console.log(configuration.main);
+            database.getAll().then((all) => {
+            $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
+            $(configuration.main).show("drop", {}, 1000);
+            });
+
+        });
     }
 };
