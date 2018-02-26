@@ -1,6 +1,9 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     display: block;
+    width:1079px;
+    height:674px;
+  
     /*object-fit:cover;*/
     /*position:inherit;*/
 
