@@ -265,3 +265,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#foot-container {
+    text-align: center;
+}

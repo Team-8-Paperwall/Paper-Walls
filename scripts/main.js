@@ -10,8 +10,9 @@ $(function () {
     });
 
     if (path === "" || path === "#") {
-        location.hash = "#home";
         path = "#home";
+        location.hash = path;
+        router(path);
     } else {
         router(path);
     }

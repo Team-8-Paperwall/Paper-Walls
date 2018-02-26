@@ -1,6 +1,7 @@
 const configuration = (function() {
 
     return {
-        main: "#main-container"
+        main: "#main-container",
+        footer: "#foot-container"
     };
 })();

@@ -1,7 +1,8 @@
 /* globals $ configuration*/
 
 const carouselTemplate = function (category) {
-    const html = `<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    const html = `
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
     </div>
     <!-- Left and right controls -->

@@ -4,7 +4,6 @@ const database = (function () {
 
     // Inner logic
     function getAll() {
-
         return new Promise((res, rej) => {
             $.getJSON("../data/data.json", function (data) {
                 const wallpapers = [];
@@ -13,6 +12,30 @@ const database = (function () {
                         wallpapers.push(wallpaper);
                     }
                 }
+                res(wallpapers);
+            });
+        });
+    };
+
+    function getAllPaged() {
+        return new Promise((res, rej) => {
+            $.getJSON("../data/data.json", function (data) {
+                let wallpapers = {};
+                var page = 1;
+                let wallpapersPerPage = [];
+
+                for (const category of data.categories) {
+                    for (const wallpaper of category.wallpapers) {
+                        if (wallpapersPerPage.length === 8) {
+                            wallpapers[page] = wallpapersPerPage;
+                            page += 1;
+                            wallpapersPerPage = [];
+                        } else {
+                            wallpapersPerPage.push(wallpaper);
+                        }
+                    }
+                }
+                wallpapers[page] = wallpapersPerPage;
                 res(wallpapers);
             });
         });
@@ -39,6 +62,7 @@ const database = (function () {
     // Expose API
     return {
         getAll,
+        getAllPaged,
         getAnimals,
         getCategory
     };

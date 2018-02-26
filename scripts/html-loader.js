@@ -1,6 +1,10 @@
 /* globals gridTemplate aboutUsTemplate carouselTemplate*/
 
 const htmlLoader = (function () {
+    const loadGridPage = function () {
+
+    };
+
     const loadGrid = function (wallpapers) {
         return gridTemplate(wallpapers);
     };
@@ -14,6 +18,7 @@ const htmlLoader = (function () {
     };
 
     return {
+        loadGridPage,
         loadGrid,
         loadAboutUs,
         loadCarousel
