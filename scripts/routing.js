@@ -3,26 +3,35 @@
 const router = (function () {
     let shouldLoadPagination = true;
 
-    const on = function(path) {
+    const on = function (path) {
         if (path.includes("home")) {
             let pathParams = path.split("/");
-    
+
             if (pathParams.length > 2) {
-                alert("go to 404");
-                console.log("params len");
+                $("#not-found-container").show();
+                $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                $("#wrapper").hide();
+                return;
             } else if (isNaN(+pathParams[1])) {
-                alert("go to 404");
-                console.log("not a num");
+                $("#not-found-container").show();
+                $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                $("#wrapper").hide();
+                return;
             }
-    
+
             let page = +pathParams[1];
-    
+
             database.getAllPaged().then((data) => {
                 if (data.size < page) {
-                 alert("go to 404");
-                 console.log("page not valid");
+                    $("#not-found-container").show();
+                    $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                    $("#wrapper").hide();
+                    return;
                 }
-    
+
+                $("#wrapper").show();
+                $("#not-found-container").hide();
+
                 $(configuration.main).html(htmlLoader.loadGridPage(data, page));
                 //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
@@ -39,7 +48,7 @@ const router = (function () {
             database.getAnimals().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
-    
+
         } else if (path === "#categories/cars") {
             shouldLoadPagination = true;
             paginationLogic.remove();
@@ -52,7 +61,7 @@ const router = (function () {
             database.getCartoons().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
-    
+
         } else if (path === "#categories/computers") {
             shouldLoadPagination = true;
             paginationLogic.remove();
@@ -86,10 +95,12 @@ const router = (function () {
         } else {
             shouldLoadPagination = true;
             paginationLogic.remove();
-            alert("TODO: Redirect to 404 page!");
+            $("#not-found-container").show();
+            $("#not-found-container").html(htmlLoader.loadPageNotFound());
+            $("#wrapper").hide();
         }
     };
-    
+
     return {
         on
     };
