@@ -13,6 +13,6 @@ const router = function (path) {
             $(configuration.main).html(htmlLoader.loadCarousel(category));
         });
     } else {
-        alert("TODO: Redirect to 404 page!");
+       alert("TODO: Redirect to 404 page!");
     }
 };

@@ -15,6 +15,7 @@ const carouselTemplate = function (category) {
     </a>
     <button id="dln" class="btn btn-primary">Download!</button>
     <a id="link" href="" download="paperWallsWallpaper"></a>
+    </a>
 </div>
       `;
 
