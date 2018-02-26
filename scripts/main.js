@@ -6,14 +6,13 @@ $(function () {
     $(window).on("hashchange", function () {
         path = location.hash;
 
-       router(path);
+       router.on(path);
     });
 
     if (path === "" || path === "#") {
-        path = "#home";
+        path = "#home/1";
         location.hash = path;
-        router(path);
-    } else {
-        router(path);
     }
+
+    router.on(path);
 });

@@ -266,6 +266,6 @@ body{
     background-size: cover;
 }
 
-#foot-container {
+.pagination-test {
     text-align: center;
 }

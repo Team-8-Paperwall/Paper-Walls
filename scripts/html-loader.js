@@ -1,8 +1,8 @@
-/* globals gridTemplate aboutUsTemplate carouselTemplate*/
+/* globals gridTemplatePaged gridTemplate aboutUsTemplate carouselTemplate*/
 
 const htmlLoader = (function () {
-    const loadGridPage = function () {
-
+    const loadGridPage = function (wallpapersObj, page) {
+        return gridTemplatePaged(wallpapersObj, page);
     };
 
     const loadGrid = function (wallpapers) {
