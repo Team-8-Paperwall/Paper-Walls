@@ -2,15 +2,15 @@
 
 const gridTemplate = (function () {
 
-    const gridTemplatePaged = function (wallpapersObj) {
+    const gridTemplatePaged = function (wallpapersObj, page) {
         let $gridContainer = $("<div>");
         $gridContainer.addClass("outer-grid-container");
 
         Object.keys(wallpapersObj).forEach(key => {
             let $innerGridContainer = $("<div>");
-            $innerGridContainer.addClass("inner-grid-container").addClass(`grid-container-${key}`);
-            if (key !== "1") {
-                $innerGridContainer.addClass("hidden");
+            $innerGridContainer.addClass("inner-grid-container").addClass(`grid-container-${key}`).addClass("hidden");
+            if (key === page.toString()) {
+                $innerGridContainer.removeClass("hidden").addClass("active");
             }
 
             if (key !== "size") {
@@ -28,26 +28,22 @@ const gridTemplate = (function () {
                 $gridContainer.append($innerGridContainer);
             }
         });
-        
+
         return $gridContainer;
     };
 
-    const gridPagination = function (pages) {
+    const gridPagination = function (pages, current) {
         let html = `
     <div class="pagination-test"> 
         <ul class="pagination">
     `;
 
-        let first = true;
-
         for (let i = 0; i < pages; i++) {
             let pageNum = i + 1;
-
-            if (first) {
-                html += `<li class="page-item active"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
-                first = false;
+            if (pageNum === +current) {
+                html += `<li class="page-item page-item-${pageNum} active"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
             } else {
-                html += `<li class="page-item"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+            html += `<li class="page-item page-item-${pageNum}"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
             }
         }
 

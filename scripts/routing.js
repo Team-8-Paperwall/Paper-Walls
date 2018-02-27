@@ -30,68 +30,74 @@ const router = (function () {
                 $notFoundContainer.hide();
 
                 if (shouldLoadGridPage) {
-                    $(configuration.main).html(htmlLoader.loadGridPage(data));
+                    configuration.main.html(htmlLoader.loadGridPage(data, page));
                     shouldLoadGridPage = false;
+                } else {
+                    paginationLogic.goToPage(page);
                 }
                 
                 //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
-                    paginationLogic.create(data);
+                    configuration.footer.html(htmlLoader.loadPagination(data.size, page));
                     shouldLoadPagination = false;
                 }
+
+                
             });
         } else if (path === "#our-team") {
-            paginationRemove();
-            $(configuration.main).html(htmlLoader.loadAboutUs);
+            removePagination();
+            configuration.main.html(htmlLoader.loadAboutUs);
         } else if (path === "#categories/animals") {
-            paginationRemove();
+            removePagination();
             database.getAnimals().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
 
         } else if (path === "#categories/cars") {
-            paginationRemove();
+            removePagination();
             database.getCars().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/cartoons") {
-            paginationRemove();
+            removePagination();
             database.getCartoons().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
 
         } else if (path === "#categories/computers") {
-            paginationRemove();
+            removePagination();
             database.getComputers().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/celebrities") {
-            paginationRemove();
+            removePagination();
             database.getCelebs().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/landscapes") {
-            paginationRemove();
+            removePagination();
             database.getLandscapes().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/futuristic") {
-            paginationRemove();
+            removePagination();
             database.getFuturistics().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/sports") {
-            paginationRemove();
+            removePagination();
             database.getSports().then((category) => {
-                $(configuration.main).html(htmlLoader.loadCarousel(category));
+                configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else {
+            //removePagination();
            loadPageNotFound();
         }
     };
 
-    function paginationRemove() {
+    function removePagination() {
         shouldLoadPagination = true;
+        shouldLoadGridPage = true;
         paginationLogic.remove();
     };
 
