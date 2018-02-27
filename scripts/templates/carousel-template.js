@@ -17,6 +17,7 @@ const carouselTemplate = function (category) {
     <button id="dln" class="btn btn-primary">Download!</button>
     <a id="link" href="" download="paperWallsWallpaper"></a>
     </a>
+   
 </div>
       `;
 
@@ -33,16 +34,14 @@ const carouselTemplate = function (category) {
             ).append(
                 commsDiv
             );
-    };
-    // var generateComment = function () {
-    //     return $("<div>")
-    //         .addClass("container")
-    //     $("<div>")
-    //         .addClass("row")
-    //     $("<div>")
-    //         .addClass("col-sm-12");
-    // }
+        
 
+    };
+
+    var somethin = function (thing) {
+        return $("<h1>")
+            .append(thing);
+    }
     $(configuration.main).html(html);
 
     category.forEach(function(el) {
