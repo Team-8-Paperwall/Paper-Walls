@@ -27,7 +27,7 @@ const router = (function () {
                 }
 
                 $wrapper.show();
-                $notFoundContainer.hide();
+                $notFoundContainer.html("");
 
                 if (shouldLoadGridPage) {
                     configuration.main.html(htmlLoader.loadGridPage(data, page));
