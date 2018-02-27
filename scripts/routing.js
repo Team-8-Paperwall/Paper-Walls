@@ -42,6 +42,7 @@ const router = (function () {
         } else if (path === "#our-team") {
             shouldLoadPagination = true;
             paginationLogic.remove();
+            $(configuration.main).html(htmlLoader.loadAboutUs);
         } else if (path === "#categories/animals") {
             shouldLoadPagination = true;
             paginationLogic.remove();
