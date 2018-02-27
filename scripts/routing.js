@@ -1,68 +1,107 @@
-/* globals $ database configuration htmlLoader getCarousel alert*/
+/* globals $ database configuration htmlLoader alert*/
 
-const router = function (path) {
-    if (path === "#home") {
-        database.getAll().then((all) => {
-            $(configuration.main).html(htmlLoader.loadGrid(all)).hide();
-            $(configuration.main).show("drop", {}, 1000);
-        });
-    } else if (path === "#our-team") {
-        $(configuration.main).html(htmlLoader.loadAboutUs());
-    } else if (path === "#categories/animals") { // TODO: add other categories
-        database.getAnimals().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
+const router = (function () {
+    let shouldLoadPagination = true;
 
-    }
-    else if (path === "#categories/cars") {
+    const on = function (path) {
+        if (path.includes("home")) {
+            let pathParams = path.split("/");
 
-        database.getCars().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
+            if (pathParams.length > 2) {
+                $("#not-found-container").show();
+                $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                $("#wrapper").hide();
+                return;
+            } else if (isNaN(+pathParams[1])) {
+                $("#not-found-container").show();
+                $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                $("#wrapper").hide();
+                return;
+            }
 
-    }
-    else if (path === "#categories/cartoons") {
+            let page = +pathParams[1];
 
-        database.getCartoons().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
+            database.getAllPaged().then((data) => {
+                if (data.size < page) {
+                    $("#not-found-container").show();
+                    $("#not-found-container").html(htmlLoader.loadPageNotFound());
+                    $("#wrapper").hide();
+                    return;
+                }
 
-    }
-    else if (path === "#categories/computers") {
+                $("#wrapper").show();
+                $("#not-found-container").hide();
 
-        database.getComputers().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
+                $(configuration.main).html(htmlLoader.loadGridPage(data, page));
+                //$(configuration.main).show("drop", {}, 1000);
+                if (shouldLoadPagination) {
+                    paginationLogic.create(data);
+                    shouldLoadPagination = false;
+                }
+            });
+        } else if (path === "#our-team") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+        } else if (path === "#categories/animals") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getAnimals().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
 
+        } else if (path === "#categories/cars") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getCars().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else if (path === "#categories/cartoons") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getCartoons().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
 
-    }
-    else if (path === "#categories/celebrities") {
+        } else if (path === "#categories/computers") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getComputers().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else if (path === "#categories/celebrities") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getCelebs().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else if (path === "#categories/landscapes") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getLandscapes().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else if (path === "#categories/futuristic") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getFuturistics().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else if (path === "#categories/sports") {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            database.getSports().then((category) => {
+                $(configuration.main).html(htmlLoader.loadCarousel(category));
+            });
+        } else {
+            shouldLoadPagination = true;
+            paginationLogic.remove();
+            $("#not-found-container").show();
+            $("#not-found-container").html(htmlLoader.loadPageNotFound());
+            $("#wrapper").hide();
+        }
+    };
 
-        database.getCelebs().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
-
-    }
-    else if (path === "#categories/landscapes") {
-
-        database.getLandscapes().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
-
-    }
-    else if (path === "#categories/futuristic") {
-
-        database.getFuturistics().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
-
-    }
-    else if (path === "#categories/sports") {
-        database.getSports().then((category) => {
-            $(configuration.main).html(htmlLoader.loadCarousel(category));
-        });
-
-    } else {
-        alert("TODO: Redirect to 404 page!");
-    }
-};
+    return {
+        on
+    };
+})();

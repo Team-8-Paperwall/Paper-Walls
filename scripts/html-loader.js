@@ -1,6 +1,10 @@
-/* globals gridTemplate aboutUsTemplate carouselTemplate*/
+/* globals gridTemplatePaged gridTemplate aboutUsTemplate carouselTemplate*/
 
 const htmlLoader = (function () {
+    const loadGridPage = function (wallpapersObj, page) {
+        return gridTemplatePaged(wallpapersObj, page);
+    };
+
     const loadGrid = function (wallpapers) {
         return gridTemplate(wallpapers);
     };
@@ -13,9 +17,15 @@ const htmlLoader = (function () {
        return carouselTemplate(category);
     };
 
+    const loadPageNotFound= function(){
+        return pageNotFoundTemplate();
+    };
+
     return {
+        loadGridPage,
         loadGrid,
         loadAboutUs,
-        loadCarousel
+        loadCarousel,
+        loadPageNotFound
     };
 })();
