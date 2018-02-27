@@ -1,68 +1,60 @@
 /* globals $ */
 
-const gridTemplate = function (wallpapers) {
-    let $gridContainer = $("<div>");
-    $gridContainer.addClass("grid-container");
+const gridTemplate = (function () {
 
-    for (let i = 0; i < wallpapers.length; i++) {
-        let wallpaper = wallpapers[i];
+    const gridTemplatePaged = function (wallpapersObj, page) {
+        let $gridContainer = $("<div>");
+        $gridContainer.addClass("outer-grid-container");
 
-        let $img = $("<img>");
-        $img.attr("src", wallpaper.location);
-        $img.addClass("grid-wallpaper");
+        Object.keys(wallpapersObj).forEach(key => {
+            let $innerGridContainer = $("<div>");
+            $innerGridContainer.addClass("inner-grid-container").addClass(`grid-container-${key}`).addClass("hidden");
+            if (key === page.toString()) {
+                $innerGridContainer.removeClass("hidden").addClass("active");
+            }
 
-        let $imgContainer = $("<div>");
-        $imgContainer.html($img);
-        $imgContainer.addClass("grid-wallpaper-container");
+            if (key !== "size") {
+                wallpapersObj[key].forEach(wallpaper => {
+                    let $img = $("<img>");
+                    $img.attr("src", wallpaper.location);
+                    $img.addClass("grid-wallpaper");
 
-        $gridContainer.append($imgContainer);
-    }
+                    let $imgContainer = $("<div>");
+                    $imgContainer.html($img);
+                    $imgContainer.addClass("grid-wallpaper-container");
+                    $innerGridContainer.append($imgContainer);
+                });
 
-    return $gridContainer;
-};
+                $gridContainer.append($innerGridContainer);
+            }
+        });
 
-const gridTemplatePaged = function (wallpapersObj, page) {
-    let $gridContainer = $("<div>");
-    $gridContainer.addClass("grid-container");
+        return $gridContainer;
+    };
 
-    for (let i = 0; i < wallpapersObj[page].length; i++) {
-        let wallpaper = wallpapersObj[page][i];
-
-        let $img = $("<img>");
-        $img.attr("src", wallpaper.location);
-        $img.addClass("grid-wallpaper");
-
-        let $imgContainer = $("<div>");
-        $imgContainer.html($img);
-        $imgContainer.addClass("grid-wallpaper-container");
-
-        $gridContainer.append($imgContainer);
-    }
-
-    return $gridContainer;
-};
-
-const gridPagination = function (pages) {
-    let html = `
+    const gridPagination = function (pages, current) {
+        let html = `
     <div class="pagination-test"> 
         <ul class="pagination">
     `;
 
-    let first = true;
-
-    for (let i = 0; i < pages; i++) {
-        let pageNum = i + 1;
-
-        if (first) {
-            html += `<li class="page-item active"><a class="page-link" href="#home/` + pageNum + `"><span class="page-link">` + pageNum + `<span class="sr-only">(current)</span></span></a></li>`;
-            first = false;
-        } else {
-            html += `<li class="page-item"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+        for (let i = 0; i < pages; i++) {
+            let pageNum = i + 1;
+            if (pageNum === +current) {
+                html += `<li class="page-item page-item-${pageNum} active"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+            } else {
+            html += `<li class="page-item page-item-${pageNum}"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+            }
         }
-    }
 
-    html += `
+        html += `
         </ul>
     </div>`;
-    return html;
-};
+        return html;
+    };
+
+    return {
+        gridTemplatePaged,
+        gridPagination
+    };
+})();

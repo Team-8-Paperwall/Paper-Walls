@@ -1,12 +1,12 @@
-/* globals gridTemplatePaged gridTemplate aboutUsTemplate carouselTemplate pageNotFoundTemplate*/
+/* globals gridTemplate aboutUsTemplate carouselTemplate pageNotFoundTemplate*/
 
 const htmlLoader = (function () {
     const loadGridPage = function (wallpapersObj, page) {
-        return gridTemplatePaged(wallpapersObj, page);
+        return gridTemplate.gridTemplatePaged(wallpapersObj, page);
     };
 
-    const loadGrid = function (wallpapers) {
-        return gridTemplate(wallpapers);
+    const loadPagination = function (pages, current) {
+        return gridTemplate.gridPagination(pages, current);
     };
 
     const loadAboutUs = function () {
@@ -23,7 +23,7 @@ const htmlLoader = (function () {
 
     return {
         loadGridPage,
-        loadGrid,
+        loadPagination,
         loadAboutUs,
         loadCarousel,
         loadPageNotFound

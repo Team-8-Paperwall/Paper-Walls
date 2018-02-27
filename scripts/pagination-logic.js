@@ -1,21 +1,20 @@
+/* globals $  configuration htmlLoader*/
+
 const paginationLogic = (function () {
-
-    const create = function (data) {
-        $(configuration.footer).html(gridPagination(data.size));
-
-        $(".pagination").on("click", ".page-item", function () {
-            let currentActive = $(".page-item.active");
-            currentActive.removeClass("active");
-            $(this).addClass("active");
-        });
-    }
-
     const remove = function() {
         $(configuration.footer).html("");
-    };    
+    };
+
+    const goToPage = function (page) {
+        const $currentActive = $(".page-item.active");
+        $currentActive.removeClass("active");
+        $(`.page-item-${page}`).addClass("active");
+        $(".inner-grid-container.active").addClass("hidden").removeClass("active");
+        $(`.grid-container-${page}`).removeClass("hidden").addClass("active");
+    };
 
     return {
-        create,
-        remove
-    };  
+        remove,
+        goToPage
+    };
 })();
