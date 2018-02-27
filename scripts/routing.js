@@ -35,14 +35,13 @@ const router = (function () {
                 } else {
                     paginationLogic.goToPage(page);
                 }
-                
+
                 //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
                     configuration.footer.html(htmlLoader.loadPagination(data.size, page));
                     shouldLoadPagination = false;
                 }
 
-                
             });
         } else if (path === "#our-team") {
             removePagination();
@@ -90,7 +89,7 @@ const router = (function () {
                 configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else {
-            //removePagination();
+            // removePagination();
            loadPageNotFound();
         }
     };
