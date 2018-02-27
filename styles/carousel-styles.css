@@ -26,23 +26,26 @@
     margin-left:-24%;
     border-width:15px;
     border-style: ridge;
-    border-color: #393c3e;
+    border-color:#63b3e9;
 
 }
 #whole{
-    margin-left:25%;
+    margin-left:18%;
 }
 .carouselImage img{
     width:150%;
     height:auto;
 }
 .komentari{
-border-width:10px;
+border-width:8px;
+position: relative;
 border-style:ridge;
-border-color: black;
+border-color:#63b3e9;
 height: 200px;
+width: 139%;
+right:18.53%;
 overflow: scroll;
-background-color: #393c3e;
+background-color: #a7a7a7;
 }
 .thumbnail img{
     border-width:0px;
