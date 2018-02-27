@@ -66,7 +66,6 @@ const carouselTemplate = function (category) {
             .append(
                 $("<img>").attr("src", picture)
             );
-<<<<<<< HEAD
         colClass.append(thumbnail);
 
         let colClass2 = $("<div>");
@@ -111,15 +110,6 @@ const carouselTemplate = function (category) {
     };
 
 
-=======
-    };
-
-    var somethin = function (thing) {
-        return $("<h1>")
-            .append(thing);
-    };
-
->>>>>>> d6a0d05d2c1501ef33bac160d42d9903e10c0493
     $(configuration.main).html(html);
 
     category.forEach(function (el) {
