@@ -55,6 +55,17 @@ const database = (function () {
             });
         });
     }
+    function getComments(name) {
+        return new Promise((res, rej) => {
+            $.getJSON("../data/data.json", function (data) {
+                for (const comments of database.name.comments) {
+                    if (comments.length!==0) {
+                        res(category.comments);
+                    }
+                }
+            });
+        });
+    }
 
     // Expose API
     return {
@@ -67,6 +78,7 @@ const database = (function () {
         getFuturistics,
         getLandscapes,
         getSports,
+        getComments,
         getCategory
     };
 })();

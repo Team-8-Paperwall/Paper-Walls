@@ -25,15 +25,28 @@ const carouselTemplate = function (category) {
                 $("<img>").attr("src", imageSrc)
             );
     };
+    // var generateComment = function () {
+    //     return $("<div>")
+    //         .addClass("container")
+    //     $("<div>")
+    //         .addClass("row")
+    //     $("<div>")
+    //         .addClass("col-sm-12");
+    // }
 
     $(configuration.main).html(html);
 
     for (let i = 0; i < category.length; i++) {
         let el = category[i];
         let div = generateCarouselItem(el.location);
+        // let comments = database.getComments(el[i].name);
 
         $(".carousel-inner").append(div);
     }
+
+
+
+
 
     $("#dln").on("click", function () {
         var source = $(".active img").attr("src");
@@ -42,10 +55,10 @@ const carouselTemplate = function (category) {
         $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
 
         $("#link").get(0).click();
+
     });
 
     $(".item").eq(0).addClass("active");
-
 
     $(".carousel").carousel({
         interval: 2000

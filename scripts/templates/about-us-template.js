@@ -23,7 +23,7 @@ const aboutUsTemplate = function () {
           <div class="col-lg-3 col-sm-6 text-center mb-4 team-member">
             <img class="rounded img-fluid" src="../imgs/team pictures/stefan.jpg" alt="">  
             <h4 class = "member-name">Stefan Zhekov</h4>
-            <h5 class = "company-position">Trainee</h5>
+            <h5 class = "company-position">BOG</h5>
             <p class = "member-description">dura bura dura bura dura bura</p>
           </div>     
         </div>
