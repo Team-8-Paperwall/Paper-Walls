@@ -20,19 +20,26 @@ const carouselTemplate = function (category) {
 </div>
       `;
 
-    var generateCarouselItem = function (imageSrc) {
+    var generateCarouselItem = function (imageSrc, comments) {
+        let commsDiv = $("<div>");
+        comments.forEach((com) => {
+            commsDiv.append(com.content);
+        });
+
         return $("<div>")
             .addClass("item")
             .append(
                 $("<img>").attr("src", imageSrc)
+            ).append(
+                commsDiv
             );
     };
 
     $(configuration.main).html(html);
 
-    category.forEach(function(el){
-        let div = generateCarouselItem(el.location);
-        $(".carousel-inner").append(div);       
+    category.forEach(function(el) {
+        let div = generateCarouselItem(el.location, el.comments);
+        $(".carousel-inner").append(div);
     });
 
     $("#dln").on("click", function () {
@@ -44,6 +51,6 @@ const carouselTemplate = function (category) {
 
     $(".item").eq(0).addClass("active");
     $(".carousel").carousel({
-        interval: 2000
+        interval: 0
     });
 };
