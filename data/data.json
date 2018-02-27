@@ -5,12 +5,25 @@
                 "name": "Animal1",
                 "location": "./imgs/animals/1.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -18,12 +31,25 @@
                 "name": "Animal2",
                 "location": "./imgs/animals/2.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -31,12 +57,25 @@
                 "name": "Animal3",
                 "location": "./imgs/animals/3.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -44,12 +83,25 @@
                 "name": "Animal4",
                 "location": "./imgs/animals/4.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -57,12 +109,25 @@
                 "name": "Animal5",
                 "location": "./imgs/animals/5.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -70,12 +135,25 @@
                 "name": "Animal6",
                 "location": "./imgs/animals/6.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice dog!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice dog!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             }
@@ -87,79 +165,157 @@
             "name": "1",
             "location": "./imgs/cars/1.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "2",
             "location": "./imgs/cars/2.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "3",
             "location": "./imgs/cars/3.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "4",
             "location": "./imgs/cars/4.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "5",
             "location": "./imgs/cars/5.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "6",
             "location": "./imgs/cars/6.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         }]
         },
         {
@@ -169,93 +325,184 @@
             "name": "1",
             "location": "./imgs/celebrities/1.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "2",
             "location": "./imgs/celebrities/2.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         
 },
 {        
         "name": "3",
         "location": "./imgs/celebrities/3.jpg",
         "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {       
             "name": "4",
             "location": "./imgs/celebrities/7.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {     
             "name": "5",
             "location": "./imgs/celebrities/5.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "6",
             "location": "./imgs/celebrities/6.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {      
             "name": "7",
             "location": "./imgs/celebrities/7.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-        ]           
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]         
     }]
     },
     {
@@ -264,79 +511,157 @@
             "name": "1",
             "location": "./imgs/cartoons/1.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "2",
             "location": "./imgs/cartoons/2.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "3",
             "location": "./imgs/cartoons/3.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "4",
             "location": "./imgs/cartoons/4.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "5",
             "location": "./imgs/cartoons/5.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "6",
             "location": "./imgs/cartoons/6.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         }]
         },
         {
@@ -345,79 +670,157 @@
             "name": "1",
             "location": "./imgs/computers/1.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "2",
             "location": "./imgs/computers/2.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "3",
             "location": "./imgs/computers/3.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "4",
             "location": "./imgs/computers/4.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "5",
             "location": "./imgs/computers/5.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         },
         {
             "name": "6",
             "location": "./imgs/computers/6.jpg",
             "comments": [{
-                    "author": "Gosho",
-                    "content": "nice!"
-                },
-                {
-                    "author": "pesHo",
-                    "content": "not nice!"
-                }
-            ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
         }]
         },
         {
@@ -426,12 +829,25 @@
                 "name": "1",
                 "location": "./imgs/futuristic/1.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -439,12 +855,25 @@
                 "name": "2",
                 "location": "./imgs/futuristic/2.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -452,12 +881,25 @@
                 "name": "3",
                 "location": "./imgs/futuristic/3.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -465,12 +907,25 @@
                 "name": "3",
                 "location": "./imgs/futuristic/3.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -478,12 +933,25 @@
                 "name": "4",
                 "location": "./imgs/futuristic/4.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -491,12 +959,25 @@
                 "name": "5",
                 "location": "./imgs/futuristic/5.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             },
@@ -504,12 +985,25 @@
                 "name": "6",
                 "location": "./imgs/futuristic/6.jpg",
                 "comments": [{
-                        "author": "Gosho",
-                        "content": "nice!"
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
                     },
                     {
-                        "author": "pesHo",
-                        "content": "not nice!"
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
                     }
                 ]
             
@@ -522,67 +1016,132 @@
                     "name": "2",
                     "location": "./imgs/sports/2.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "3",
                     "location": "./imgs/sports/3.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "4",
                     "location": "./imgs/sports/4.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "5",
                     "location": "./imgs/sports/5.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                
                   {
                     "name": "6",
                     "location": "./imgs/sports/6.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 
                     }]
                     
@@ -593,92 +1152,183 @@
                     "name": "1",
                     "location": "./imgs/landscapes/1.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "2",
                     "location": "./imgs/landscapes/2.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "3",
                     "location": "./imgs/landscapes/3.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "3",
                     "location": "./imgs/landscapes/3.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "4",
                     "location": "./imgs/landscapes/4.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                 {
                     "name": "5",
                     "location": "./imgs/landscapes/5.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 },
                   {
                     "name": "6",
                     "location": "./imgs/landscapes/6.jpg",
                     "comments": [{
-                            "author": "Gosho",
-                            "content": "nice!"
-                        },
-                        {
-                            "author": "pesHo",
-                            "content": "not nice!"
-                        }
-                    ]
+                        "author": "Iskra",
+                        "content": "Eeee chefo mnogo qk carousel!!",
+                        "picture":"./imgs/team pictures/iskra.jpg"
+                        
+                    },
+                    {
+                        "author": "Plamen",
+                        "content": "Moje i po-dobre ama stava!",
+                        "picture":"./imgs/team pictures/plamen.jpg"
+                    },
+                    {
+                        "author": "Cheficha",
+                        "content": "Carousel-a pruska da si znaite !",
+                        "picture":"./imgs/team pictures/stefan.jpg"
+                    },
+                    {
+                        "author": "Steven",
+                        "content": "Bravo 100 tochki na proekta !",
+                        "picture":"./imgs/animals/2.jpg"
+                    }
+                ]
                 
                     }]
                 }
