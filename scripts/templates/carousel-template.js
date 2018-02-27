@@ -40,19 +40,10 @@ const carouselTemplate = function (category) {
 
     category.forEach(function(el){
         let div = generateCarouselItem(el.location);
-<<<<<<< HEAD
-        // let comments = database.getComments(el[i].name);
 
         $(".carousel-inner").append(div);
-    }
-=======
-        $(".carousel-inner").append(div);       
     });
->>>>>>> 94efa688a529b9d28c6766aae847e24ab44b27cd
-
-
-
-
+            
 
     $("#dln").on("click", function () {
         var source = $(".active img").attr("src");
@@ -63,10 +54,8 @@ const carouselTemplate = function (category) {
     });
 
     $(".item").eq(0).addClass("active");
-<<<<<<< HEAD
 
-=======
->>>>>>> 94efa688a529b9d28c6766aae847e24ab44b27cd
+
     $(".carousel").carousel({
         interval: 2000
     });
