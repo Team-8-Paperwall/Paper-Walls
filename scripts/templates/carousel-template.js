@@ -57,6 +57,7 @@ const carouselTemplate = function (category) {
     });
 
     $(".item").eq(0).addClass("active");
+
     $(".carousel").carousel({
         interval: 0
     });
