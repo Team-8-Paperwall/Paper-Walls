@@ -34,6 +34,14 @@ const carouselTemplate = function (category) {
                 commsDiv
             );
     };
+    // var generateComment = function () {
+    //     return $("<div>")
+    //         .addClass("container")
+    //     $("<div>")
+    //         .addClass("row")
+    //     $("<div>")
+    //         .addClass("col-sm-12");
+    // }
 
     $(configuration.main).html(html);
 
@@ -47,6 +55,7 @@ const carouselTemplate = function (category) {
         $("#link").attr("href", source);
         $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
         $("#link").get(0).click();
+
     });
 
     $(".item").eq(0).addClass("active");
