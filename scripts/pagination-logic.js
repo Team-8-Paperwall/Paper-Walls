@@ -1,4 +1,4 @@
-/* globals $  configuration htmlLoader*/
+/* globals $  configuration */
 
 const paginationLogic = (function () {
     const remove = function() {
