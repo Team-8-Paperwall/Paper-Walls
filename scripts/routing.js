@@ -1,22 +1,20 @@
-/* globals $ database configuration htmlLoader alert*/
+/* globals $ database paginationLogic configuration htmlLoader */
 
 const router = (function () {
     let shouldLoadPagination = true;
     let shouldLoadGridPage = true;
+    const $wrapper = $("#wrapper");
+    const $notFoundContainer =  $("#not-found-container");
 
     const on = function (path) {
         if (path.includes("home")) {
             let pathParams = path.split("/");
 
             if (pathParams.length > 2) {
-                $("#not-found-container").show();
-                $("#not-found-container").html(htmlLoader.loadPageNotFound());
-                $("#wrapper").hide();
+                loadPageNotFound();
                 return;
             } else if (isNaN(+pathParams[1])) {
-                $("#not-found-container").show();
-                $("#not-found-container").html(htmlLoader.loadPageNotFound());
-                $("#wrapper").hide();
+                loadPageNotFound();
                 return;
             }
 
@@ -24,14 +22,13 @@ const router = (function () {
 
             database.getAllPaged().then((data) => {
                 if (data.size < page) {
-                    $("#not-found-container").show();
-                    $("#not-found-container").html(htmlLoader.loadPageNotFound());
-                    $("#wrapper").hide();
+                    loadPageNotFound();
                     return;
                 }
 
-                $("#wrapper").show();
-                $("#not-found-container").hide();
+                $wrapper.show();
+                $notFoundContainer.hide();
+
                 if (shouldLoadGridPage) {
                     $(configuration.main).html(htmlLoader.loadGridPage(data));
                     shouldLoadGridPage = false;
@@ -44,66 +41,64 @@ const router = (function () {
                 }
             });
         } else if (path === "#our-team") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             $(configuration.main).html(htmlLoader.loadAboutUs);
         } else if (path === "#categories/animals") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getAnimals().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
 
         } else if (path === "#categories/cars") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getCars().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/cartoons") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getCartoons().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
 
         } else if (path === "#categories/computers") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getComputers().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/celebrities") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getCelebs().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/landscapes") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getLandscapes().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/futuristic") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getFuturistics().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else if (path === "#categories/sports") {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
+            paginationRemove();
             database.getSports().then((category) => {
                 $(configuration.main).html(htmlLoader.loadCarousel(category));
             });
         } else {
-            shouldLoadPagination = true;
-            paginationLogic.remove();
-            $("#not-found-container").show();
-            $("#not-found-container").html(htmlLoader.loadPageNotFound());
-            $("#wrapper").hide();
+           loadPageNotFound();
         }
+    };
+
+    function paginationRemove() {
+        shouldLoadPagination = true;
+        paginationLogic.remove();
+    };
+
+    function loadPageNotFound() {
+        $notFoundContainer.show();
+        $notFoundContainer.html(htmlLoader.loadPageNotFound());
+        $wrapper.hide();
     };
 
     return {
