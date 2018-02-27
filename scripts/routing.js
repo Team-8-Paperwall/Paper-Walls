@@ -2,6 +2,7 @@
 
 const router = (function () {
     let shouldLoadPagination = true;
+    let shouldLoadGridPage = true;
 
     const on = function (path) {
         if (path.includes("home")) {
@@ -31,8 +32,11 @@ const router = (function () {
 
                 $("#wrapper").show();
                 $("#not-found-container").hide();
-
-                $(configuration.main).html(htmlLoader.loadGridPage(data, page));
+                if (shouldLoadGridPage) {
+                    $(configuration.main).html(htmlLoader.loadGridPage(data));
+                    shouldLoadGridPage = false;
+                }
+                
                 //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
                     paginationLogic.create(data);

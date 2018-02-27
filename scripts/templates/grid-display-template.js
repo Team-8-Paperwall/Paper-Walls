@@ -21,24 +21,50 @@ const gridTemplate = function (wallpapers) {
     return $gridContainer;
 };
 
-const gridTemplatePaged = function (wallpapersObj, page) {
+const gridTemplatePaged = function (wallpapersObj) {
     let $gridContainer = $("<div>");
-    $gridContainer.addClass("grid-container");
+    $gridContainer.addClass("all-grid-container");
 
-    for (let i = 0; i < wallpapersObj[page].length; i++) {
-        let wallpaper = wallpapersObj[page][i];
+    Object.keys(wallpapersObj).forEach(key => {
+        let $innerGridContainer = $("<div>");
+        $innerGridContainer.addClass("grid-container").addClass(`grid-container-${key}`);
+        if (key !== "1") {
+            $innerGridContainer.addClass("hidden");
+        }
+        
+        if (key !== "size") {
+            wallpapersObj[key].forEach(wallpaper => {
+                let $img = $("<img>");
+                $img.attr("src", wallpaper.location);
+                $img.addClass("grid-wallpaper");
 
-        let $img = $("<img>");
-        $img.attr("src", wallpaper.location);
-        $img.addClass("grid-wallpaper");
+                let $imgContainer = $("<div>");
+                $imgContainer.html($img);
+                $imgContainer.addClass("grid-wallpaper-container");
+                $innerGridContainer.append($imgContainer);
+            });
 
-        let $imgContainer = $("<div>");
-        $imgContainer.html($img);
-        $imgContainer.addClass("grid-wallpaper-container");
+            $gridContainer.append($innerGridContainer);
+        }
+    });
 
-        $gridContainer.append($imgContainer);
-    }
+    // wallpapersObj.keys.forEach(element => {
+    //     console.log(element);
+    // });
 
+    // for (let i = 0; i < wallpapersObj[page].length; i++) {
+    //     let wallpaper = wallpapersObj[page][i];
+
+    //     let $img = $("<img>");
+    //     $img.attr("src", wallpaper.location);
+    //     $img.addClass("grid-wallpaper");
+
+    //     let $imgContainer = $("<div>");
+    //     $imgContainer.html($img);
+    //     $imgContainer.addClass("grid-wallpaper-container");
+
+    //     $gridContainer.append($imgContainer);
+    // }
     return $gridContainer;
 };
 
@@ -54,7 +80,7 @@ const gridPagination = function (pages) {
         let pageNum = i + 1;
 
         if (first) {
-            html += `<li class="page-item active"><a class="page-link" href="#home/` + pageNum + `"><span class="page-link">` + pageNum + `<span class="sr-only">(current)</span></span></a></li>`;
+            html += `<li class="page-item active"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
             first = false;
         } else {
             html += `<li class="page-item"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;

@@ -34,14 +34,13 @@ const carouselTemplate = function (category) {
             ).append(
                 commsDiv
             );
-        
-
     };
 
     var somethin = function (thing) {
         return $("<h1>")
             .append(thing);
-    }
+    };
+
     $(configuration.main).html(html);
 
     category.forEach(function(el) {
