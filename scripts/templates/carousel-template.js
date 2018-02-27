@@ -17,8 +17,10 @@ const carouselTemplate = function (category) {
     <button id="dln" class="btn btn-primary">Download!</button>
     <a id="link" href="" download="paperWallsWallpaper"></a>
     </a>
+   
 </div>
       `;
+
 
     var generateCarouselItem = function (imageSrc) {
         return $("<div>")
@@ -26,29 +28,31 @@ const carouselTemplate = function (category) {
             .append(
                 $("<img>").attr("src", imageSrc)
             );
-    };
-    // var generateComment = function () {
-    //     return $("<div>")
-    //         .addClass("container")
-    //     $("<div>")
-    //         .addClass("row")
-    //     $("<div>")
-    //         .addClass("col-sm-12");
-    // }
+        
 
+    };
+
+    var somethin = function (thing) {
+        return $("<h1>")
+            .append(thing);
+    }
     $(configuration.main).html(html);
 
-    category.forEach(function(el){
+    category.forEach(function (el) {
+        console.log(el);
         let div = generateCarouselItem(el.location);
-<<<<<<< HEAD
-        // let comments = database.getComments(el[i].name);
-
+        let commDiv = $("<div>");
+        el.comments.forEach(function (item) {
+            commDiv.append(item.content);         
+        });
+        
         $(".carousel-inner").append(div);
-    }
-=======
-        $(".carousel-inner").append(div);       
+        $(configuration.main).append(commDiv);
     });
->>>>>>> 94efa688a529b9d28c6766aae847e24ab44b27cd
+
+
+
+
 
 
 
@@ -63,11 +67,7 @@ const carouselTemplate = function (category) {
     });
 
     $(".item").eq(0).addClass("active");
-<<<<<<< HEAD
-
-=======
->>>>>>> 94efa688a529b9d28c6766aae847e24ab44b27cd
     $(".carousel").carousel({
-        interval: 2000
+        interval: 0
     });
 };
