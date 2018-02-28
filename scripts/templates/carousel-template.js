@@ -88,6 +88,7 @@ const carouselTemplate = function (category) {
             .appendTo(panelDef);
         return cont;
     };
+    var number=0;
 
     const generateCarouselItem = function (imageSrc, comments) {
         let car = $("<div>");
@@ -98,6 +99,10 @@ const carouselTemplate = function (category) {
         car.append(imgC);
         let commentsDiv = $("<div>");
         commentsDiv.addClass("komentari");
+   
+        $(".komentari").attr("id", number);
+        number++;
+       
         comments.forEach((com) => {
 
             commentsDiv.append(generateCommentSection(com.content, com.author, com.picture),
@@ -120,24 +125,27 @@ const carouselTemplate = function (category) {
         $(".carousel-inner").append(div);
     });
 
-    $("#dln").on("click", function(){
-        download(".active img","#link");
+    $("#dln").on("click", function () {
+        download(".active img", "#link");
     });
 
     $("#commentBtn").on("click", function () {
         var person = prompt("Please enter your name: ");
-if(person.length!=0){
-    var contentOfPerson = prompt("Please enter your comment: ");  
-    if(contentOfPerson.length>100){
-        alert("Your comment should be less than 100 symbols!");
-    }
-}else  {
-    alert("This is not a valid name");
-}
-       
-        var pic="https://winnote.ru/uploads/posts/2015-04/1428173721_adduser1.png";
-    let comment = generateCommentSection(contentOfPerson,person,pic);
-    $(".komentari").append(comment);
+        if (person.length != 0) {
+            var contentOfPerson = prompt("Please enter your comment: ");
+            if (contentOfPerson.length > 100) {
+                alert("Your comment should be less than 100 symbols!");
+            }
+        } else {
+            alert("This is not a valid name");
+        }
+
+        var pic = "https://winnote.ru/uploads/posts/2015-04/1428173721_adduser1.png";
+        let comment = generateCommentSection(contentOfPerson, person, pic);
+         
+           let id = "#".concat(number-1);
+         $(id).append(comment);
+        
 
     })
 
