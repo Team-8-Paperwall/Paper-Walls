@@ -37,9 +37,9 @@ const gridTemplate = (function () {
         for (let i = 0; i < pages; i++) {
             let pageNum = i + 1;
             if (pageNum === +current) {
-                html += `<li class="page-item page-item-${pageNum} active"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+                html += `<li class="page-item page-item-${pageNum} active"><a class="page-link" href="#all/` + pageNum + `">` + pageNum + `</a></li>`;
             } else {
-                html += `<li class="page-item page-item-${pageNum}"><a class="page-link" href="#home/` + pageNum + `">` + pageNum + `</a></li>`;
+                html += `<li class="page-item page-item-${pageNum}"><a class="page-link" href="#all/` + pageNum + `">` + pageNum + `</a></li>`;
             }
         }
 

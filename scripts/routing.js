@@ -7,7 +7,7 @@ const router = (function () {
     const $notFoundContainer =  $("#not-found-container");
 
     const on = function (path) {
-        if (path.includes("home")) {
+        if (path.includes("all")) {
             let pathParams = path.split("/");
 
             if (pathParams.length > 2) {

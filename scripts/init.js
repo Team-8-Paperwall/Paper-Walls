@@ -9,7 +9,7 @@ $(function () {
     });
 
     if (path === "" || path === "#") {
-        path = "#home/1";
+        path = "#all/1";
         location.hash = path;
     }
 

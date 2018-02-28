@@ -6,7 +6,7 @@ const pageNotFoundTemplate = function () {
                 <img id="panda" src="https://assets.hongkiat.com/uploads/funny-creative-error-404/37-error-404-page.jpg">
             </div>
             <div id="btn-go-back-container">
-                <a href="#home/1" class="btn btn-danger"> Go back </a>
+                <a href="#all/1" class="btn btn-danger"> Go back </a>
             </div>
          </div>
     </div>
