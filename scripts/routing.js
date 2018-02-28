@@ -31,6 +31,8 @@ const router = (function () {
 
                 if (shouldLoadGridPage) {
                     configuration.main.html(htmlLoader.loadGridPage(data, page));
+                    modalLogic.displayModal();
+                     
                     shouldLoadGridPage = false;
                 } else {
                     paginationLogic.goToPage(page);
@@ -45,7 +47,7 @@ const router = (function () {
             });
         } else if (path === "#our-team") {
             removePagination();
-            configuration.main.html(htmlLoader.loadAboutUs);
+            configuration.main.html(htmlLoader.loadAboutUs());
         } else if (path === "#categories/animals") {
             removePagination();
             database.getAnimals().then((category) => {

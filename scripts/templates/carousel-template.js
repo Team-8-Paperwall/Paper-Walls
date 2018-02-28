@@ -14,6 +14,8 @@ const carouselTemplate = function (category) {
 
 
     </div>
+    <button id="commentBtn" class="col-lg-7 col-md-7 col-sm-7 col-xs-7 btn btn-success">Add Comment!</button>
+    
     </div>
     <!-- Left and right controls -->
     <a class="col-lg-7 col-md-7 col-sm-7 col-xs-7 left carousel-control" href="#myCarousel" data-slide="prev">
@@ -25,7 +27,6 @@ const carouselTemplate = function (category) {
         <span class="sr-only">Next</span>
     </a>
   
-    <button id="commentBtn" class="col-lg-7 col-md-7 col-sm-7 col-xs-7 btn btn-primary">Add Comment!</button>
 </div>
 </div>
 
@@ -119,17 +120,24 @@ const carouselTemplate = function (category) {
         $(".carousel-inner").append(div);
     });
 
-    $("#dln").on("click", function () {
-        var source = $(".active img").attr("src");
-        $("#link").attr("href", source);
-        $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
-        $("#link").get(0).click();
-
+    $("#dln").on("click", function(){
+        download(".active img","#link");
     });
+
     $("#commentBtn").on("click", function () {
         var person = prompt("Please enter your name: ");
-
-        var contentOfPerson = prompt("Please enter your comment: ");
+if(person.length!=0){
+    var contentOfPerson = prompt("Please enter your comment: ");  
+    if(contentOfPerson.length>100){
+        alert("Your comment should be less than 100 symbols!");
+    }
+}else  {
+    alert("This is not a valid name");
+}
+       
+        var pic="https://winnote.ru/uploads/posts/2015-04/1428173721_adduser1.png";
+    let comment = generateCommentSection(contentOfPerson,person,pic);
+    $(".komentari").append(comment);
 
     })
 

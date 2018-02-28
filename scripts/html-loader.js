@@ -21,11 +21,16 @@ const htmlLoader = (function () {
         return pageNotFoundTemplate();
     };
 
+    const loadModal = function(){
+        return modalTemplate();
+    };
+
     return {
         loadGridPage,
         loadPagination,
         loadAboutUs,
         loadCarousel,
-        loadPageNotFound
+        loadPageNotFound,
+        loadModal
     };
 })();
