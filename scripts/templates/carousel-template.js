@@ -120,13 +120,10 @@ const carouselTemplate = function (category) {
         $(".carousel-inner").append(div);
     });
 
-    $("#dln").on("click", function () {
-        var source = $(".active img").attr("src");
-        $("#link").attr("href", source);
-        $("#link").attr("download", Math.floor(Math.random() * 10000) + 1);
-        $("#link").get(0).click();
-
+    $("#dln").on("click", function(){
+        download(".active img","#link");
     });
+
     $("#commentBtn").on("click", function () {
         var person = prompt("Please enter your name: ");
 if(person.length!=0){

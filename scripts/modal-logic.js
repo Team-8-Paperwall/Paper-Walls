@@ -11,7 +11,12 @@ const modalLogic = (function () {
             });
             $modal.css("display", "block");
             $modalImage.attr("src", $this.attr("src"));
+            $("#downloadButton").on("click", function(){
+      download($modalImage,"#tempLink");
+    });
         });
+   
+   
     };
 
     return{

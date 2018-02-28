@@ -83,3 +83,9 @@
         width: 100%;
     }
 }
+
+#downloadButton{
+    margin-top:2%;
+    margin-left:79%;
+    padding : 1%;
+}

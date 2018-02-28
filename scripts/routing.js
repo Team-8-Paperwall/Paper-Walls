@@ -32,6 +32,7 @@ const router = (function () {
                 if (shouldLoadGridPage) {
                     configuration.main.html(htmlLoader.loadGridPage(data, page));
                     modalLogic.displayModal();
+                     
                     shouldLoadGridPage = false;
                 } else {
                     paginationLogic.goToPage(page);
