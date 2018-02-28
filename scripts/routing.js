@@ -31,6 +31,12 @@ const router = (function () {
 
                 if (shouldLoadGridPage) {
                     configuration.main.html(htmlLoader.loadGridPage(data, page));
+                    $(".grid-wallpaper").click(function(){
+                        var s = $(".grid-wallpaper");
+                        console.log(s);
+                        //$("#main-container").html(htmlLoader.loadModal);
+                        
+                    });
                     shouldLoadGridPage = false;
                 } else {
                     paginationLogic.goToPage(page);
