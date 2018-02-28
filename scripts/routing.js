@@ -32,13 +32,11 @@ const router = (function () {
                 if (shouldLoadGridPage) {
                     configuration.main.html(htmlLoader.loadGridPage(data, page));
                     modalLogic.displayModal();
-                     
                     shouldLoadGridPage = false;
                 } else {
                     paginationLogic.goToPage(page);
                 }
 
-                //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
                     configuration.aside.html(htmlLoader.loadPagination(data.size, page));
                     shouldLoadPagination = false;
@@ -90,7 +88,6 @@ const router = (function () {
                 configuration.main.html(htmlLoader.loadCarousel(category));
             });
         } else {
-            // removePagination();
            loadPageNotFound();
         }
     };

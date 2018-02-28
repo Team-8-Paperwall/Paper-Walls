@@ -19,6 +19,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    text-align: center;
 }
 
 /* Modal Content (image) */
@@ -86,6 +87,5 @@
 
 #downloadButton{
     margin-top:2%;
-    margin-left:79%;
     padding : 1%;
 }

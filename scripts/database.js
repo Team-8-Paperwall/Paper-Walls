@@ -12,7 +12,7 @@ const database = (function () {
                     let wallpapers = {};
                     var page = 1;
                     let wallpapersPerPage = [];
-    
+
                     for (const category of data.categories) {
                         for (const wallpaper of category.wallpapers) {
                             if (wallpapersPerPage.length === 9) {
@@ -24,11 +24,11 @@ const database = (function () {
                             }
                         }
                     }
-    
+
                     if (wallpapersPerPage.length > 0) {
                         wallpapers[page] = wallpapersPerPage;
                     }
-    
+
                     wallpapers.size = (+page - 1);
                     cachedPaged["cache"] = wallpapers;
                     res(wallpapers);
@@ -40,24 +40,31 @@ const database = (function () {
     function getAnimals() {
         return getCategory("animals");
     }
+
     function getCars() {
         return getCategory("cars");
     }
+
     function getCartoons() {
         return getCategory("cartoons");
     }
+
     function getCelebs() {
         return getCategory("celebs");
     }
+
     function getComputers() {
         return getCategory("computers");
     }
+
     function getFuturistics() {
         return getCategory("futuristic");
     }
+
     function getLandscapes() {
         return getCategory("landscapes");
     }
+
     function getSports() {
         return getCategory("sports");
     }
@@ -65,15 +72,15 @@ const database = (function () {
     function getCategory(name) {
         return new Promise((res, rej) => {
             $.getJSON("../data/data.json", function (data) {
-                data.categories.forEach(function(category){
-                        if (category.name === name) {
+                data.categories.forEach(function (category) {
+                    if (category.name === name) {
                         res(category.wallpapers);
                     }
                 });
             });
         });
     }
-   
+
     // Expose API
     return {
         getAllPaged,

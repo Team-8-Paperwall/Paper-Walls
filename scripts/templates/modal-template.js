@@ -1,4 +1,4 @@
-const modalTemplate = function(){
+const modalTemplate = function () {
 
     return `
   <div id="myModal" class="modal">
@@ -8,5 +8,5 @@ const modalTemplate = function(){
         <a id="tempLink" href="" download="paperWallsWallpaper"></a>      
         <div id="caption"></div>
     </div>    
-`
- };
+`;
+};
