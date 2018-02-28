@@ -40,7 +40,7 @@ const router = (function () {
 
                 //$(configuration.main).show("drop", {}, 1000);
                 if (shouldLoadPagination) {
-                    configuration.footer.html(htmlLoader.loadPagination(data.size, page));
+                    configuration.aside.html(htmlLoader.loadPagination(data.size, page));
                     shouldLoadPagination = false;
                 }
             });

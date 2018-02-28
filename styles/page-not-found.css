@@ -1,21 +1,30 @@
-#not-found{  
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    height: 100%;
+#outer-not-found {
+    padding-top: 100px;
     width: 100%;
+    height: 100vh;
+    background: #dcdcdc;
+}
+
+#inner-not-found {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 38%;
+}
+
+#panda-container> {
+    width: 100%;
+    height: 100%;
 }
 
 #panda{
     width: 100%;
     height: 100%;
-    display:inline-block;
-    position:relative;
 }
 
-
-#not-found a{
-    position:absolute;
-    right:42%;
-    top:70%;
+#btn-go-back-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }

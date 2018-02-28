@@ -2,7 +2,7 @@
 
 const paginationLogic = (function () {
     const remove = function() {
-        $(configuration.footer).html("");
+        configuration.aside.html("");
     };
 
     const goToPage = function (page) {

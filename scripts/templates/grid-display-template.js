@@ -34,7 +34,7 @@ const gridTemplate = (function () {
 
     const gridPagination = function (pages, current) {
         let html = `
-    <div class="pagination-test"> 
+    <div class="pagination-container"> 
         <ul class="pagination">
     `;
 
