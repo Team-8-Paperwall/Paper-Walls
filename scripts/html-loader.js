@@ -1,4 +1,4 @@
-/* globals gridTemplate aboutUsTemplate carouselTemplate pageNotFoundTemplate*/
+/* globals gridTemplate aboutUsTemplate carouselTemplate pageNotFoundTemplate modalTemplate*/
 
 const htmlLoader = (function () {
     const loadGridPage = function (wallpapersObj, page) {
@@ -21,7 +21,7 @@ const htmlLoader = (function () {
         return pageNotFoundTemplate();
     };
 
-    const loadModal = function(){
+    const loadModal = function() {
         return modalTemplate();
     };
 

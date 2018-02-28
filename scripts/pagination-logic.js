@@ -10,7 +10,7 @@ const paginationLogic = (function () {
         $currentActive.removeClass("active");
         $(`.page-item-${page}`).addClass("active");
         $(".inner-grid-container.active").addClass("hidden").removeClass("active");
-        $(`.grid-container-${page}`).removeClass("hidden").addClass("active");
+        $(`.grid-container-${page}`).removeClass("hidden").addClass("active").hide().show("drop", {}, 1000);
     };
 
     return {
