@@ -1,3 +1,5 @@
+/* globals $ configuration htmlLoader download*/
+
 const modalLogic = (function () {
     const displayModal = function () {
         $(".grid-wallpaper-container").on("click", ".grid-wallpaper", function () {
@@ -6,7 +8,7 @@ const modalLogic = (function () {
             let $modalImage = $(".modal-content");
             $modal.css("display", "block");
             $modalImage.attr("src", $(this).attr("src"));
-            
+
             $("#downloadButton").on("click", function () {
                 download($modalImage, "#tempLink");
             });
@@ -17,7 +19,9 @@ const modalLogic = (function () {
             });
         });
     };
+
     return {
         displayModal
-    }
+    };
+
 })();

@@ -1,4 +1,4 @@
-/* globals $ database paginationLogic configuration htmlLoader */
+/* globals $ database modalLogic paginationLogic configuration htmlLoader */
 
 const router = (function () {
     let shouldLoadPagination = true;
