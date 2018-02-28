@@ -25,7 +25,7 @@ const carouselTemplate = function (category) {
         <span class="sr-only">Next</span>
     </a>
   
-   
+    <button id="commentBtn" class="col-lg-7 col-md-7 col-sm-7 col-xs-7 btn btn-primary">Add Comment!</button>
 </div>
 </div>
 
@@ -42,47 +42,49 @@ const carouselTemplate = function (category) {
     //     </div><!-- /row -->
 
     //       `;
-    const generateCommentSection = function (content, author,picture) {
-        let cont = $("<div>");
-        cont.addClass("container");
-        let rowClass1 = $("<div>");
-        rowClass1.addClass("row");
-        cont.append(rowClass1);
-        let colClass1 = $("<div>");
-        colClass1.addClass("col-sm-12");
-        rowClass1.append(colClass1);
+    const generateCommentSection = function (content, author, picture) {
+        let cont = $("<div>")
+            .addClass("container");
+        let rowClass1 = $("<div>")
+            .addClass("row")
+            .appendTo(cont);
+        let colClass1 = $("<div>")
+            .addClass("col-sm-12")
+            .appendTo(rowClass1);
 
-        let rowClass = $("<div>");
-        rowClass.addClass("row");
-        rowClass1.append(rowClass);
+        let rowClass = $("<div>")
+            .addClass("row")
+            .appendTo(rowClass1);
 
-        let colClass = $("<div>");
-        colClass.addClass("col-sm-1");
-        rowClass.append(colClass);
+        let colClass = $("<div>")
+            .addClass("col-sm-1")
+            .appendTo(rowClass);
 
 
-        let thumbnail = $("<div>");
-        thumbnail.addClass("thumbnail")
+        let thumbnail = $("<div>")
+            .addClass("thumbnail")
             .append(
                 $("<img>").attr("src", picture)
-            );
-        colClass.append(thumbnail);
+            )
+            .appendTo(colClass);
 
-        let colClass2 = $("<div>");
-        colClass2.addClass("col-sm-5");
-        cont.append(colClass2);
-        let panelDef = $("<div>");
-        panelDef.addClass("panel panel-default");
-        colClass2.append(panelDef);
-        let panelHead = $("<div>");
-        panelHead.addClass("panel-heading");
-        panelHead.text(author);
-        panelDef.append(panelHead);
-        let panelBody = $("<div>");
-        panelBody.addClass("panel-body");
-        panelBody.text(content);
-        panelDef.append(panelBody);
-        console.log("asd");
+        let colClass2 = $("<div>")
+            .addClass("col-sm-5")
+            .appendTo(cont);
+
+        let panelDef = $("<div>")
+            .addClass("panel panel-default")
+            .appendTo(colClass2);
+
+        let panelHead = $("<div>")
+            .addClass("panel-heading")
+            .text(author)
+            .appendTo(panelDef);
+
+        let panelBody = $("<div>")
+            .addClass("panel-body")
+            .text(content)
+            .appendTo(panelDef);
         return cont;
     };
 
@@ -97,8 +99,8 @@ const carouselTemplate = function (category) {
         commentsDiv.addClass("komentari");
         comments.forEach((com) => {
 
-            commentsDiv.append(generateCommentSection(com.content, com.author,com.picture),
-           
+            commentsDiv.append(generateCommentSection(com.content, com.author, com.picture),
+
             );
 
             car.append(commentsDiv);
@@ -124,6 +126,12 @@ const carouselTemplate = function (category) {
         $("#link").get(0).click();
 
     });
+    $("#commentBtn").on("click", function () {
+        var person = prompt("Please enter your name: ");
+
+        var contentOfPerson = prompt("Please enter your comment: ");
+
+    })
 
     $(".item").eq(0).addClass("active");
 
