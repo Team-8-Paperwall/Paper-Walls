@@ -43,7 +43,6 @@ const router = (function () {
                     configuration.footer.html(htmlLoader.loadPagination(data.size, page));
                     shouldLoadPagination = false;
                 }
-
             });
         } else if (path === "#our-team") {
             removePagination();

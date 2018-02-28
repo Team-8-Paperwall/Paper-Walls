@@ -3,21 +3,6 @@
 const database = (function () {
     const cachedPaged = {};
 
-    // Inner logic
-    function getAll() {
-        return new Promise((res, rej) => {
-            $.getJSON("../data/data.json", function (data) {
-                const wallpapers = [];
-                data.categories.forEach(function(category){
-                     category.wallpapers.forEach(function(wallpaper){
-                        wallpapers.push(wallpaper);
-                     });
-                });
-                res(wallpapers);
-            });
-        });
-    };
-
     function getAllPaged() {
         return new Promise((res, rej) => {
             if (cachedPaged.hasOwnProperty("cache")) {
@@ -88,21 +73,9 @@ const database = (function () {
             });
         });
     }
-    function getComments(name) {
-        return new Promise((res, rej) => {
-            $.getJSON("../data/data.json", function (data) {
-                for (const comments of database.name.comments) {
-                    if (comments.length!==0) {
-                        res(category.comments);
-                    }
-                }
-            });
-        });
-    }
-
+   
     // Expose API
     return {
-        getAll,
         getAllPaged,
         getAnimals,
         getCars,
@@ -112,7 +85,6 @@ const database = (function () {
         getFuturistics,
         getLandscapes,
         getSports,
-        getComments,
         getCategory
     };
 })();
